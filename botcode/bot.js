@@ -45,7 +45,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             case 'say':
                 var cmd = args[0];
                 if (cmd){
-                	speak(args[]);
+                	speak(args[].join(' '));
                 }else{
                         speak('what?');
                 }
