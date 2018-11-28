@@ -1,6 +1,7 @@
 var Discord = require('discord.io');
 var logger = require('winston');
 var auth = require('./auth.json');
+include
 // Configure logger settings
 logger.remove(logger.transports.Console);
 logger.add(new logger.transports.Console, {
@@ -42,48 +43,35 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             break;
             
             case 'say':
-                bot.sendMessage({
-                    to: channelID,
-                    message: 'no'
-                });
+                speak('no');
             break;
             
             case 'scream':
-                bot.sendMessage({
-                    to: channelID,
-                    message: 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
-                });
+            	var aNumber = Math.floor(Math.random() * 10);
+		if (aNumber >= 6){
+                    speak('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA!');
+                }else if(aNumber <= 3){
+                    speak('AaAaAaAaAaAaAaAaAAaAaAaAaAaAaAaAaAAaAaAa!');
+                }else{
+                    speak('_\*Incoherent screaming*_');
+                }
             break;
             
             case 'lore':
                 var cmd = args[0];
                 if(cmd == 'suspendium') {
-                  bot.sendMessage({
-                      to: channelID,
-                      message: '_This world is filled with Suspendium, it floats and not too much is known about it except that it\'s not healthy to be around. It is also often associated with magic._'
-                  });
+                  speak('_This world is filled with Suspendium, it floats and not too much is known about it except that it\'s not healthy to be around. It is also often associated with magic._');
+                }else if (lore == 1){
+                  speak('... please state \`lore\` and a \`topic\`');
+                  const lore = 0;
                 }else{
-                  if (lore == 1){
-                    bot.sendMessage({
-                        to: channelID,
-                        message: '... please state a \`lore\` and \`topic\`'
-                    });
-                    var lore = 0;
-                  }else{
-                    bot.sendMessage({
-                        to: channelID,
-                        message: 'That is a interesting topic, but there is simply too much of it to just speak about it in one sitting, how about we start with one subject first?'
-                    });
-                    var lore = 1;
-                  }
+                  speak('That is a interesting topic, but there is simply too much of it to just speak about it in one sitting, how about we start with one subject first?');
+                  const lore = 1;
                 }
             break;
             
             default:
-                bot.sendMessage({
-                        to: channelID,
-                        message: 'ehm... sorry, I don\'t have anything to say about that, _yet_'
-                    });
+                speak('ehm... sorry, I don\'t have anything to say about that, _yet_ @Vabese#9153 please fix this, i\'m confused. halp!');
             break;
          }
      }
