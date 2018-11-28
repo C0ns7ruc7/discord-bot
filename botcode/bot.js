@@ -30,7 +30,7 @@ function speak(msg){
 bot.on('message', function (user, userID, channelID, message, evt) {
     // Our bot needs to know if it will execute a command
     // It will listen for messages that will start with `$`
-    if (message.substring(0, 1) == '$') {
+    if (message.substring(0, 1) == '$' || message.substring(0, 20) == '@Molten Greebel#8823' ) {
         var args = message.substring(1).split(' ');
         var cmd = args[0];
        
@@ -55,17 +55,13 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             break;
             
             case 'lore':
-                switch(cmd) {
-                
-                case 'suspendium':
+                var cmd = args[0];
+                if(cmd == 'suspendium') {
                   bot.sendMessage({
                       to: channelID,
                       message: '_This world is filled with Suspendium, it floats and not too much is known about it except that it\'s not healthy to be around. It is also often associated with magic._'
-                });
-                
-                break;
-                
-                default:
+                  });
+                }else{
                   if (lore == 1){
                     bot.sendMessage({
                         to: channelID,
@@ -78,7 +74,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     });
                     var lore = 1;
                   }
-                break;
+                }
             break;
             
             default:
