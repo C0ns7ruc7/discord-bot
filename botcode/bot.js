@@ -43,6 +43,10 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 speak('pong!');
             break;
             
+            case 'ree':
+                speak('https://youtu.be/7Jm_eUQSYAk');
+            break;
+            
             case 'say':
                 var cmd = args[0];
                 if (cmd){
