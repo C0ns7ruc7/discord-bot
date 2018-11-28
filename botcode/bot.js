@@ -1,7 +1,7 @@
 var Discord = require('discord.io');
 var logger = require('winston');
 var auth = require('./auth.json');
-const lore;
+var lore;
 
 // Configure logger settings
 logger.remove(logger.transports.Console);
@@ -73,10 +73,10 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                   speak('_This world is filled with Suspendium, it floats and not too much is known about it except that it\'s not healthy to be around. It is also often associated with magic._');
                 }else if (lore == 1){
                   speak('... please state \`lore\` and a \`topic\`');
-                  const lore = 0;
+                  var lore = 0;
                 }else{
                   speak('That is a interesting topic, but there is simply too much of it to just speak about it in one sitting, how about we start with one subject first?');
-                  const lore = 1;
+                  var lore = 1;
                 }
             break;
             
