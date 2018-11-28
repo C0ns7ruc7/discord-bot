@@ -17,6 +17,16 @@ bot.on('ready', function (evt) {
     logger.info('Logged in as: ');
     logger.info(bot.username + ' - (' + bot.id + ')');
 });
+
+// costum functions
+function speak(msg){
+  bot.sendMessage({
+  to: channelID,
+  message: msg + ''
+  });
+}
+
+
 bot.on('message', function (user, userID, channelID, message, evt) {
     // Our bot needs to know if it will execute a command
     // It will listen for messages that will start with `$`
@@ -27,39 +37,56 @@ bot.on('message', function (user, userID, channelID, message, evt) {
         args = args.splice(1);
         switch(cmd) {
             case 'ping':
-                bot.sendMessage({
-                    to: channelID,
-                    message: 'Pong!'
-                });
+                speak('pong!');
             break;
-			
-			case 'say':
+            
+            case 'say':
                 bot.sendMessage({
                     to: channelID,
                     message: 'no'
                 });
             break;
-			
-			case 'scream':
+            
+            case 'scream':
                 bot.sendMessage({
                     to: channelID,
                     message: 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
                 });
             break;
-			
-			case 'lore':
-                bot.sendMessage({
-                    to: channelID,
-                    message: '_This world is filled with Suspendium, it floats and not too much is known about it except that it\'s not healthy to be around. It is also often associated with magic._'
+            
+            case 'lore':
+                switch(cmd) {
+                
+                case 'suspendium':
+                  bot.sendMessage({
+                      to: channelID,
+                      message: '_This world is filled with Suspendium, it floats and not too much is known about it except that it\'s not healthy to be around. It is also often associated with magic._'
                 });
+                
+                break;
+                
+                default:
+                  if (lore == 1){
+                    bot.sendMessage({
+                        to: channelID,
+                        message: '... please state a `lore` and `topic`'
+                    });
+                  }else{
+                    bot.sendMessage({
+                        to: channelID,
+                        message: 'That is a interesting topic, but there is simply too much of it to just speak about it in one sitting, how about we start with one subject first?'
+                    });
+                    var lore = 1;
+                  }
+                break;
             break;
-			
-			default:
-				bot.sendMessage({
-						to: channelID,
-						message: 'ehm... sorry, I don\'t have anything to say about that, _yet_'
-					});
-			break;
+            
+            default:
+                bot.sendMessage({
+                        to: channelID,
+                        message: 'ehm... sorry, I don\'t have anything to say about that, _yet_'
+                    });
+            break;
          }
      }
 });
