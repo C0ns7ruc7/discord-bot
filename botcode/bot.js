@@ -21,8 +21,8 @@ bot.on('ready', function (evt) {
 // costum functions
 function speak(msg){
   bot.sendMessage({
-  to: channelID,
-  message: msg + ''
+    to: channelID,
+    message: msg
   });
 }
 
@@ -30,10 +30,10 @@ function speak(msg){
 bot.on('message', function (user, userID, channelID, message, evt) {
     // Our bot needs to know if it will execute a command
     // It will listen for messages that will start with `$`
-    if (message.substring(0, 1) == '$' || message.substring(0, 20) == '@Molten Greebel#8823' ) {
+    if (message.substring(0, 1) == '$') {
         var args = message.substring(1).split(' ');
         var cmd = args[0];
-       
+    	   
         args = args.splice(1);
         switch(cmd) {
             case 'ping':
@@ -65,8 +65,9 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                   if (lore == 1){
                     bot.sendMessage({
                         to: channelID,
-                        message: '... please state a `lore` and `topic`'
+                        message: '... please state a \`lore\` and \`topic\`'
                     });
+                    var lore = 0;
                   }else{
                     bot.sendMessage({
                         to: channelID,
