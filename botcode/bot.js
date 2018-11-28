@@ -22,7 +22,7 @@ bot.on('ready', function (evt) {
 function speak(msg){
   bot.sendMessage({
     to: channelID,
-    message: msg
+    message: msg + ''
   });
 }
 
