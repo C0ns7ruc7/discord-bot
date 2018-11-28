@@ -43,7 +43,12 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             break;
             
             case 'say':
-                speak('no');
+                var cmd = args[0];
+                if (cmd){
+                	speak(args[]);
+                }else{
+                        speak('what?');
+                }
             break;
             
             case 'scream':
