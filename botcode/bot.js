@@ -1,7 +1,11 @@
 var Discord = require('discord.io');
 var logger = require('winston');
 var auth = require('./auth.json');
-var lore;
+
+const ego = require('./free_will');
+const dice = require('./dicey');
+
+const lore = 2;
 
 // Configure logger settings
 logger.remove(logger.transports.Console);
@@ -33,6 +37,9 @@ bot.on('message', function (user, userID, channelID, message, evt) {
       });
     }
     
+	if (message.substring(0, 20) == '@Molten Greebel#8823'){
+		
+	}
     if (message.substring(0, 1) == '$') {
         var args = message.substring(1).split(' ');
         var cmd = args[0];
@@ -44,7 +51,11 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             break;
             
             case 'ree':
-                speak('https://youtu.be/7Jm_eUQSYAk');
+                speak('ReeEeEeEEE!');
+            break;
+			
+			case 'Ubergrad':
+                speak('_^ *`spingrad`_');
             break;
             
             case 'say':
@@ -69,19 +80,19 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             
             case 'lore':
                 var cmd = args[0];
-                if(cmd == 'suspendium') {
-                  speak('_This world is filled with Suspendium, it floats and not too much is known about it except that it\'s not healthy to be around. It is also often associated with magic._');
+                if(cmd) {
+                  speak('... you know, in this part i would bring up a topic but the function is not here yet');
                 }else if (lore == 1){
                   speak('... please state \`lore\` and a \`topic\`');
-                  var lore = 0;
+                  const lore = 0;
                 }else{
                   speak('That is a interesting topic, but there is simply too much of it to just speak about it in one sitting, how about we start with one subject first?');
-                  var lore = 1;
+                  const lore = 1;
                 }
             break;
             
             default:
-                speak('ehm... sorry, I don\'t have anything to say about that, _yet_ @Vabese#9153 please fix this, i\'m confused. halp!');
+                speak('ehm... sorry, i\'m confused. halp!');
             break;
          }
      }
