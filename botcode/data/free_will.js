@@ -1,6 +1,6 @@
 // wip script pseudo random choice module
 
-// make it generate sequence of numbers, give it a 
+// make it generate sequence of numbers, give it `ego("function", "valleu");`
 function ego (wfunction, wargument){
 	function choose(pick){
 		pick = isNaN(pick) ? 0 : pick;

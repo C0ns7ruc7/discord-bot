@@ -1,9 +1,9 @@
 var Discord = require('discord.io');
 var logger = require('winston');
-var auth = require('./auth.json');
+var auth = require('./data/auth.json');
 
-const ego = require('./free_will');
-const dice = require('./dicey');
+const ego = require('./data/ree_will');
+const dice = require('./data/dicey');
 
 const lore = 2;
 
@@ -29,7 +29,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
     // Our bot needs to know if it will execute a command
     // It will listen for messages that will start with `$`
     
-    // shorten message
+    // shorten message function
     function speak(msg){
       bot.sendMessage({
         to: channelID,
@@ -37,9 +37,9 @@ bot.on('message', function (user, userID, channelID, message, evt) {
       });
     }
     
-	if (message.substring(0, 20) == '@Molten Greebel#8823'){
-		
-	}
+	// if (message.isMentioned(user)){
+	//	speak('pong!');
+	//}
     if (message.substring(0, 1) == '$') {
         var args = message.substring(1).split(' ');
         var cmd = args[0];
@@ -61,7 +61,11 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             case 'say':
                 var cmd = args[0];
                 if (cmd){
-                	speak(cmd);
+					var result = '';
+                	for (II in args){
+						result = result + ' ' + args[II];
+					}
+					speak(result);
                 }else{
                         speak('what?');
                 }
