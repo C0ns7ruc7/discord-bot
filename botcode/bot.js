@@ -61,20 +61,27 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             
             case 'say':
                 var cmd = args[0];
-                if (cmd){
+                if (cmd && cmd.substring(0, 1) !== '$'){
 					var result = '';
                 	for (II in args){
 						result = result + ' ' + args[II];
 					}
-					speak(result);
+					speak(user + ' said: ' + result);
                 }else{
-                        speak('what?');
+					var aNumber = Math.floor(Math.random() * 10);
+					if (aNumber >= 6){
+						speak('you what?');
+					}else if(aNumber <= 3){
+						speak('are you daft?');
+					}else{
+						speak('nope, not saying that and you can\'t make me');
+					}
                 }
             break;
             
             case 'scream':
             	var aNumber = Math.floor(Math.random() * 10);
-		if (aNumber >= 6){
+				if (aNumber >= 6){
                     speak('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA!');
                 }else if(aNumber <= 3){
                     speak('AaAaAaAaAaAaAaAaAAaAaAaAaAaAaAaAaAAaAaAa!');
