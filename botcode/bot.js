@@ -2,10 +2,14 @@ var Discord = require('discord.io');
 var logger = require('winston');
 var auth = require('./data/auth.json');
 
-const ego = require('./data/ree_will');
-const dice = require('./data/dicey');
+const ego = require('./data/free_will.js');
+const dice = require('./data/dicey.js');
+const fs = require('fs');
 
 const lore = 2;
+
+let loredata = fs.readFileSync('./data/lore.json');  
+let loreparsed = JSON.parse(loredata);  
 
 // Configure logger settings
 logger.remove(logger.transports.Console);
@@ -37,13 +41,10 @@ bot.on('message', function (user, userID, channelID, message, evt) {
       });
     }
     
-	// if (message.isMentioned(user)){
-	//	speak('pong!');
-	//}
     if (message.substring(0, 1) == '$') {
         var args = message.substring(1).split(' ');
         var cmd = args[0];
-    	   
+    	logger.info(message);
         args = args.splice(1);
         switch(cmd) {
             case 'ping':
@@ -85,7 +86,13 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             case 'lore':
                 var cmd = args[0];
                 if(cmd) {
-                  speak('... you know, in this part i would bring up a topic but the function is not here yet');
+					if(cmd == 'random'){
+						
+					}else{
+						var find = args.toString().toUpperCase();
+						speak(loreparsed[find]);
+						logger.info("finding: " + find);
+					}
                 }else if (lore == 1){
                   speak('... please state \`lore\` and a \`topic\`');
                   const lore = 0;
