@@ -8,8 +8,6 @@ const fs = require('fs');
 
 const lore = 2;
 
-let loredata = fs.readFileSync('./data/lore.json');  
-let loreparsed = JSON.parse(loredata);  
 
 // Configure logger settings
 logger.remove(logger.transports.Console);
@@ -91,6 +89,8 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             
             case 'LORE':
                 var cmd = args[0];
+				let loredata = fs.readFileSync('./data/lore.json');  
+				let loreparsed = JSON.parse(loredata); 
                 if(cmd) {
 					if(cmd == 'random'){
 						
@@ -109,12 +109,17 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             break;
 			
 			case 'ADDLORE':
-				var loreicdata = JSON.stringify(loreparsed);
-				loreicdata.replace('\"\}', '\", \"'+ args[0] + '\": \"' + args + '\"\}');
-				fs.writeFile('./data/lore.json', loreicdata, 'utf8', function (err) {
-					if (err) return logger.info(err);
+				fs.readFile('./data/lore.json', 'utf8', function (err,data) {
+					if (err) {
+						return console.log(err);
+					}
+					var result = data.replace('\"\}', '\", \"'+ args[0].toUpperCase().replace(/,|\*|_|\`/gi, '') + '\": \"' + args.join(' ') + '\"\}').replace(/(?:\r\n|\r|\n)/g, ' ');
+
+					fs.writeFile('./data/lore.json', result, 'utf8', function (err) {
+						if (err) return console.log(err);
+					});
 				});
-				speak('I tried!');
+				speak('I tried!');  
 			break;
             
             default:

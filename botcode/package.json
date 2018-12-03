@@ -1,6 +1,6 @@
 {
 	"name": "molten-bot",
-	"version": "1.2.1",
+	"version": "1.2.4",
 	"description": "a molten monster Bot",
 	"main": "bot.js",
 	"author": "Cataclysm",
