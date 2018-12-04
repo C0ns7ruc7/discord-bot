@@ -44,7 +44,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
         args = args.splice(1);
         switch(cmd) {
 			case 'HELP': speak(
-'this is the help function of the molten bot, I have the following commands that you can use, ' + user + '! \n\n ok first up i\'m still being made so, be gentle... \n\n I have \`Ping\`, \`pong\`, \`bing\`, \`bong\`, \`ree\`, \`scream\` they are what they are, use em an I will come back at you >=\) \n then I have the \`say\` comand, it makes me repeat you... I don\'t know why that is here. \n I also keep track of \`lore\` things, you can add things with \`addlore\` and remove with \`rmvlore\` to get rid of it(wip). \n\n there are a bunch of other things in the works'
+'this is the help function of the molten bot, I have the following commands that you can use, ' + user + '! \n\n ok first up i\'m still being made so, be gentle... \n\n I have \`Ping\`, \`pong\`, \`bing\`, \`bong\`, \`ree\`, \`scream\` they are what they are, use em an I will come back at you >=\) \n then I have the \`say\` comand, it makes me repeat you... I don\'t know why that is here. \n I also keep track of \`lore\` things, you can add things with \`addlore\` and remove with \`rmvlore\` to get rid of it(wip). \n\n there are a bunch of other things in the works \n don\'t forget I use \`$\`\'s to react'
 			); 
 			break;
 			
@@ -140,7 +140,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 				speak('I added... something related to ' + args[0]);  
 			break;
 			
-			case 'RMVLORE':
+			case '-RMVLORE':
 				fs.readFile('./data/lore.json', 'utf8', function (err,data) {
 					if (err) {
 						return console.log(err);
@@ -160,9 +160,18 @@ bot.on('message', function (user, userID, channelID, message, evt) {
          }
      }
 	
-	fs.appendFile("./data/log.txt", Date.now() + ' U: ' + user + ' UID: ' + userID + ' CID: ' + channelID + ' Msg: ' + message + ' Evt: ' + evt + '\n', function(err) {
+	fs.appendFile("./data/log.txt", Date.now() + ' UID: ' + userID + ' CID: ' + channelID + ' U: ' + user + ' Msg: ' + message + ' Evt: ' + evt + '\n', function(err) {
 		if(err) {
 			return logger.info(err);
 		}
 	}); 
+	if (Date.now()%10000 == 0){
+		bot.sendMessage({
+			to: 481133060348182550,
+			message: '<@&481250276825890817> you should RP! it would make me happy =D'
+		});
+		logger.info('i did a shout');
+	}
 });
+
+
