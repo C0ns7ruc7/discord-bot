@@ -75,23 +75,17 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             break;
 			
 			case 'SAYTO':
-                var cmd = args[0];
-                if (cmd && cmd.substring(0, 1) !== '$'){
-					var result = '';
-                	for (II in args){
-						result = result + ' ' + args[II];
-					}
-					speak(result);
-                }else{
-					var aNumber = Math.floor(Math.random() * 10);
-					if (aNumber >= 6){
-						speak('are you sure?');
-					}else if(aNumber <= 3){
-						speak('ok...?');
-					}else{
-						speak('no you');
-					}
-                }
+				var sendto = args[0].replace(/<|#|>/g, '')
+				args = args.splice(1);
+                
+				var result = '';
+				for (II in args){
+					result = result + ' ' + args[II];
+				}
+				bot.sendMessage({
+					to: sendto + '',
+					message: result + ''
+				});
             break;
             
             case 'SCREAM':
@@ -165,10 +159,10 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 			return logger.info(err);
 		}
 	}); 
-	if (Date.now()%10000 == 0){
+	if (Math.floor(Math.random() * 30000) <= 200){
 		bot.sendMessage({
-			to: 481133060348182550,
-			message: '<@&481250276825890817> you should RP! it would make me happy =D'
+			to: '481133060348182550',
+			message: '<@&481250276825890817> you should RP! join a side or do your own thing'
 		});
 		logger.info('i did a shout');
 	}
