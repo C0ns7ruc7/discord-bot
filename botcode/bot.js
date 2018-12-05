@@ -38,13 +38,13 @@ bot.on('message', function (user, userID, channelID, message, evt) {
       });
     }
     
-    if (message.substring(0, 1) == '$') {
+    if (message.substring(0, 1) == '$' || message.substring(0, 22) == '<@!517269535024349195>') {
         var args = message.substring(1).split(' ');
         var cmd = args[0].toUpperCase();
         args = args.splice(1);
         switch(cmd) {
 			case 'HELP': speak(
-'this is the help function of the molten bot, I have the following commands that you can use, ' + user + '! \n\n ok first up i\'m still being made so, be gentle... \n\n I have \`Ping\`, \`pong\`, \`bing\`, \`bong\`, \`ree\`, \`scream\` they are what they are, use em an I will come back at you >=\) \n then I have the \`say\` comand, it makes me repeat you... I don\'t know why that is here. \n I also keep track of \`lore\` things, you can add things with \`addlore\` and remove with \`rmvlore\` to get rid of it(wip). \n\n there are a bunch of other things in the works \n don\'t forget I use \`$\`\'s to react'
+'this is the help function of the molten bot, I have the following commands that you can use, ' + user + '! \n\n ok first up i\'m still being made so, be gentle... \n\n I have \`Ping\`, \`pong\`, \`bing\`, \`bong\`, \`ree\`, \`scream\` they are what they are, use em an I will come back at you >=\) \n then I have the \`say\` {msg} comand, it makes me repeat you... I don\'t know why that is here. \n I also keep track of \`lore\` [lore name] things, you can add things with \`addlore\` [frist word is key] {the rest} and remove with \`rmvlore\` to get rid of it(wip). \n there is also the \`mail\` [#channel] {msg}  where you can send to a channel \n\n there are a bunch of other things in the works \n don\'t forget I use \`$\`\'s to react'
 			); 
 			break;
 			
@@ -74,7 +74,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 }
             break;
 			
-			case 'SAYTO':
+			case 'ROOTSAYTO':
 				var sendto = args[0].replace(/<|#|>/g, '')
 				args = args.splice(1);
                 
@@ -86,6 +86,26 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 					to: sendto + '',
 					message: result + ''
 				});
+            break;
+			
+			case 'MAIL':
+				if(args[0]){
+					var sendto = args[0].replace(/<|#|>/g, '')
+					args = args.splice(1);
+					
+					var result = '';
+					for (II in args){
+						result = result + ' ' + args[II];
+					}
+					bot.sendMessage({
+						to: sendto + '',
+						message: '\`' + userID + '\` has sent you the following message:' + result + ''
+					});
+					speak('your message has been sent');
+				}else{
+					speak('you broke the message');
+				}
+				
             break;
             
             case 'SCREAM':
@@ -149,9 +169,9 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 			break;
             
             default:
-                speak('ehm... sorry, i\'m confused. halp!');
+                speak('ehm... ok? try running \`$help\`');
             break;
-         }
+        }
      }
 	
 	fs.appendFile("./data/log.txt", Date.now() + ' UID: ' + userID + ' CID: ' + channelID + ' U: ' + user + ' Msg: ' + message + ' Evt: ' + evt + '\n', function(err) {
@@ -159,12 +179,12 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 			return logger.info(err);
 		}
 	}); 
+
 	if (Math.floor(Math.random() * 30000) <= 200){
 		bot.sendMessage({
 			to: '481133060348182550',
 			message: '<@&481250276825890817> you should RP! join a side or do your own thing'
 		});
-		logger.info('i did a shout');
 	}
 });
 
