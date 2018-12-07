@@ -99,7 +99,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 					}
 					bot.sendMessage({
 						to: sendto + '',
-						message: '\`' + userID + '\` has sent you the following message:' + result + ''
+						message: '_A radio signal on frequency_ **\`[' + Math.floor((userID - channelID) / Date.now()) + ']\`** _is being received._ ' + result + ''
 					});
 					speak('your message has been sent');
 				}else{
@@ -166,6 +166,15 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 					});
 				});
 				speak('I added... something related to ' + args[0]);  
+			break;
+			
+			case 'DIE':
+				if (channelID == '483465099093344276')
+				{
+					die();
+				}else{
+					speak('You can only do that in the \`bot commands\` channel');
+				}
 			break;
             
             default:
