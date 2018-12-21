@@ -1,0 +1,10 @@
+1545405297601 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $ree Evt: [object Object]
+1545405297780 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: rEeeeEEEE! Evt: [object Object]
+1545405402282 UID: 314559616954662913 CID: 524217670061522954 U: NaterzSnowtaterz Msg: *The man frowns and looks around to make sure nobody is watching. Assured he is not being watched, his hand holding the note lights on fire and he watches it burn with distaste.*
+*A guard approaches him.*
+Guard: "Everything alright, sir?"
+Man: "Yes, it's fine. We were briefly being tracked, but no worries. We made the containment safe out of lead for just this purpose, they only got a brief glimpse of the location. The tracker on
+ the man should be fine, though, as the dampeners take care of that kind of thing as soon as he entered the facility. Hurry up on the preparation, though, just in case."
+Guard: "On it."
+*He turns around and yells for the hangar doors to be closed.* Evt: [object Object]
+1545405471907 UID: 524405494744612879 CID: 524217670061522954 U: Dbug113 Msg: *006 begins screeching with the intensity of ten thousand infants* Evt: [object Object]

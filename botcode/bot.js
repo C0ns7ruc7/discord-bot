@@ -1,3 +1,4 @@
+// constants and vars
 var Discord = require('discord.io');
 var logger = require('winston');
 var auth = require('./data/auth.json');
@@ -24,7 +25,13 @@ bot.on('ready', function (evt) {
     logger.info('Connected');
     logger.info('Logged in as: ');
     logger.info(bot.username + ' - (' + bot.id + ')');
-	bot.setPresence( 'game' );
+
+	fs.rename('./logs/log.txt', './logs/log' + Date.now() + '.txt', (err) => {
+	  if (err) throw err;
+	});
+	fs.writeFile('./logs/log.txt', '', 'ascii', (err) => {
+		if (err) throw err;
+	});  
 });
 
 bot.on('message', function (user, userID, channelID, message, evt) {
@@ -174,7 +181,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 					speak(loreparsed[find]);
 //					logger.info("finding: " + find);
 				}else{
-					var result = ((Object.keys(loreparsed)).join('\n')).toLowerCase();
+					var result = ((Object.keys(loreparsed)).join(' ')).toLowerCase();
 					speak('_<@' + userID+ '>, I have the following topic(s) available:\n_ **' + result + '**');
 				}
             break;
@@ -236,7 +243,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
         }
      }
 	
-	fs.appendFile("./data/log.txt", Date.now() + ' UID: ' + userID + ' CID: ' + channelID + ' U: ' + user + ' Msg: ' + message + ' Evt: ' + evt + '\n', function(err) {
+	fs.appendFile("./logs/log.txt", Date.now() + ' UID: ' + userID + ' CID: ' + channelID + ' U: ' + user + ' Msg: ' + message + ' Evt: ' + evt + '\n', function(err) {
 		if(err) {
 			return logger.info(err);
 		}

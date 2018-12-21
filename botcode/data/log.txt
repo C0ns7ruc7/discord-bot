@@ -2829,3 +2829,62 @@ tzeentch Evt: [object Object]
 1544905791404 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: hmmm....... Evt: [object Object]
 1544905854640 UID: 295652009745448971 CID: 511196446356275200 U: Vabese Msg: _ear twitch_ Evt: [object Object]
 1544905856249 UID: 215548660216365057 CID: 511196446356275200 U: UnitedRe-bell Msg: *Due to Umbra being the last of her kind, there's tons of empty rooms, which is kinda depressing really. To open the door for a room you need to ask a Honor Guard to open it for you* Evt: [object Object]
+1545388548345 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: i need to do stuff on that, like only allowing the creator to fuck it over, also it is the usual suspect Evt: [object Object]
+1545388551370 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $lore Evt: [object Object]
+1545388551584 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: _<@295652009745448971>, I have the following topic(s) available:
+_ **suspendium
+molten
+moon,disks
+ubergrad
+sofia
+clear
+pontimus
+titan
+dachi
+vabese
+patosav
+head
+churchofpoi
+site-113
+valdern
+max
+kinny
+lakkin
+lukas
+testing** Evt: [object Object]
+1545388551652 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: _<@295652009745448971>, I have the following topic(s) available:
+_ **suspendium
+molten
+moon,disks
+ubergrad
+sofia
+clear
+pontimus
+titan
+dachi
+vabese
+patosav
+head
+churchofpoi
+site-113
+valdern
+max
+kinny
+lakkin
+lukas
+testing
+scacpsf
+sccai
+primaris
+royal
+re
+primarus-he
+teabomb
+?
+primaris-a** Evt: [object Object]
+1545388565393 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $ree Evt: [object Object]
+1545388565540 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: rrrreeeeeeeEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE! Evt: [object Object]
+1545388565626 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: $scream Evt: [object Object]
+1545388565814 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: ***AAAAH!*** Evt: [object Object]
+1545388565859 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: AaAaAaAaAaAaAaAaAAaAaAaAaAaAaAaAaAAaAaAa! Evt: [object Object]
+1545388580535 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: btw greemble is running in duplex atm Evt: [object Object]
