@@ -249,10 +249,10 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 		}
 	}); 
 
-	if (Math.floor(Math.random() * 30000) <= 10){
+	if (Math.floor(Math.random() * 30000) <= 200){
 		bot.sendMessage({
 			to: '481133060348182550',
-			message: '<@&481250276825890817> you should RP! join a side or do your own thing'
+			message: 'no alignmend does not mean you don\'t do nothing, you should RP! join a side or do your own thing'
 		});
 	}
 });

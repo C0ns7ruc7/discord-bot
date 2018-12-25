@@ -61,28 +61,33 @@
 		12
 	],
 	[
-	"SITE-113",
-	"Site-113, A mysterious facility located in the mountains of Svejarland. Upon arrival you feel a strange urge to leave, as if you shouldn't be there....",
-	13
+		"SITE-113",
+		"Site-113, A mysterious facility located in the mountains of Svejarland. Upon arrival you feel a strange urge to leave, as if you shouldn't be there....",
+		13
 	],
 	[
-	"VALDERN",
-	"Valdern, formerly known as Clear or Pat, this man was once known as the peacekeeper, he is known for the creation of the League, Starter of the Ultimatum, creator of the coalition, and uniter of people, his downfall however came in the form of rage and grief, clear changed his name to Valdern, Saekhan for 'the fallen' as he sees himself to have fallen from the peacefull path he once walked...",
-	14],
+		"VALDERN",
+		"Valdern, formerly known as Clear or Pat, this man was once known as the peacekeeper, he is known for the creation of the League, Starter of the Ultimatum, creator of the coalition, and uniter of people, his downfall however came in the form of rage and grief, clear changed his name to Valdern, Saekhan for 'the fallen' as he sees himself to have fallen from the peacefull path he once walked...",
+		14
+	],
 	[
-	"MAX", 
-	"max, GET THE FIGURE HEAD",
-	16],
+		"MAX", 
+		"max, GET THE FIGURE HEAD",
+		16
+	],
 	[
-	"KINNY",
-	"Kinny, the chap's dead mate",
-	18], 
+		"KINNY",
+		"Kinny, the chap's dead mate",
+		18
+	], 
 	[
-	"LAKKIN",
-	"Lakkin, Chancellor of Grundia, elected by parliament majority",
-	20],
+		"LAKKIN",
+		"Lakkin, Chancellor of Grundia, elected by parliament majority",
+		20
+	],
 	[
-	"LUKAS",
-	"Lukas II of Ubergrad, the Great Tsar (king) of Ubergrad. He is commonly called \"the great\" by the people becouse of his work to make Ubergrad a world reknown country. Before it was just seen as an irrelevant city-state. He is strict, but liked in his country.",
-	30]
+		"LUKAS",
+		"Lukas II of Ubergrad, the Great Tsar (king) of Ubergrad. He is commonly called \"the great\" by the people becouse of his work to make Ubergrad a world reknown country. Before it was just seen as an irrelevant city-state. He is strict, but liked in his country.",
+		30
+	]
 }
