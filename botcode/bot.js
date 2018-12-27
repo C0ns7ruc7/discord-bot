@@ -176,13 +176,19 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 				let loredata = fs.readFileSync('./data/lorenew.json');  
 				let loreparsed = JSON.parse(loredata); 
 				var result = '';
-				logger.info(loreparsed);
+//				logger.info(loreparsed);
                 if(args[0]) {
 					var find = args.toString().toUpperCase();
-					speak(loreparsed[find]);
-					logger.info("finding: " + find);
+					for (var II of loreparsed){
+						if(loreparsed["lore"][II][0] == find){
+							result = loreparsed["lore"][II][1];
+						}
+					}
+					speak(result);
+					
+//					logger.info("finding: " + find);
 				}else{
-					var result = ((Object.keys(loreparsed)).join(' ')).toLowerCase();
+					var result = null;
 					speak('_<@' + userID+ '>, I have the following topic(s) available:\n_ **' + result + '**');
 				}
             break;
