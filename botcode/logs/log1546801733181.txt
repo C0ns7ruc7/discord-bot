@@ -1,0 +1,8 @@
+1546801688399 UID: 313205329716576256 CID: 518413302036955136 U: Dictatorputski Msg: "What!? Putski's in the mainland, the only important person here is dictator Geralt" Evt: [object Object]
+1546801712977 UID: 297459318796713996 CID: 517303057676238851 U: Fellow Human Msg: $lore Evt: [object Object]
+1546801713230 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: _<@297459318796713996>, I have the following topic(s) available:
+_ **0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17** Evt: [object Object]
+1546801715608 UID: 297459318796713996 CID: 517303057676238851 U: Fellow Human Msg: $lore 1 Evt: [object Object]
+1546801715823 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: _**Molten**: while not entirely accurate to call them that, the metal born monsters of a ancient biotech are aptly described as such with fire always being on their heels, it is recommended to just get out of the way._ Evt: [object Object]
+1546801718914 UID: 297459318796713996 CID: 517303057676238851 U: Fellow Human Msg: $lore 0 Evt: [object Object]
+1546801719113 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: _**Suspendium**: This world is filled with Suspendium, it floats and not too much is known about it except that it is not healthy to be around. It is also often associated with magic._ Evt: [object Object]

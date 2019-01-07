@@ -1,0 +1,4 @@
+1546801223889 UID: 287954310653018113 CID: 490356574460706836 U: kinny09 Msg: *There is a metal walkway* Evt: [object Object]
+1546801225472 UID: 287954310653018113 CID: 490356574460706836 U: kinny09 Msg: *beyond the walkway is darkness* Evt: [object Object]
+1546801239466 UID: 224794221217841153 CID: 510474774418554881 U: clearskiesnl Msg: "..." *he opens said box* Evt: [object Object]
+1546801239854 UID: 297459318796713996 CID: 490356574460706836 U: Fellow Human Msg: *they keep following maggie* Evt: [object Object]

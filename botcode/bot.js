@@ -176,20 +176,18 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 				let loredata = fs.readFileSync('./data/lorenew.json');  
 				let loreparsed = JSON.parse(loredata); 
 				var result = '';
-//				logger.info(loreparsed);
                 if(args[0]) {
 					var find = args.toString().toUpperCase();
-					for (var II of loreparsed){
-						if(loreparsed["lore"][II][0] == find){
-							result = loreparsed["lore"][II][1];
-						}
+					try {
+					  result = loreparsed["lore"][find][1];
 					}
-					speak(result);
+					catch(err) {
+					  result = "not found";
+					}
 					
-//					logger.info("finding: " + find);
+					speak(result);
 				}else{
-					var result = null;
-					speak('_<@' + userID+ '>, I have the following topic(s) available:\n_ **' + result + '**');
+					speak('_<@' + userID+ '>, I have the following topic(s) available:\n_ **' + Object.keys(loreparsed["lore"]) + '**');
 				}
             break;
 			
@@ -256,7 +254,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 		}
 	}); 
 
-	if (Math.floor(Math.random() * 30000) <= 100){
+	if (Math.floor(Math.random() * 30000) <= 10){
 		bot.sendMessage({
 			to: '481133060348182550',
 			message: 'no alignmend does not mean you don\'t do nothing, you should RP! join a side or do your own thing'

@@ -1,0 +1,16 @@
+1545938557249 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $lore Evt: [object Object]
+1545938557450 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: _<@295652009745448971>, I have the following topic(s) available:
+_ **null** Evt: [object Object]
+1545938557618 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: undefined Evt: [object Object]
+1545938605772 UID: 314559616954662913 CID: 480844958287396876 U: NaterzSnowtaterz Msg: <@215548660216365057> am not going to steel nyx Evt: [object Object]
+1545938606645 UID: 314559616954662913 CID: 480844958287396876 U: NaterzSnowtaterz Msg: Yet Evt: [object Object]
+1545938674960 UID: 287954310653018113 CID: 480844958287396876 U: kinny09 Msg: *Yet* Evt: [object Object]
+1545938700688 UID: 287954310653018113 CID: 490369229347094528 U: kinny09 Msg: --------- Evt: [object Object]
+1545938735267 UID: 287954310653018113 CID: 490369229347094528 U: kinny09 Msg: *A unmarked Vanguard-Class Land Dreadnought surfaces off thr coast of a onyx port* Evt: [object Object]
+1545938750180 UID: 314559616954662913 CID: 480844958287396876 U: NaterzSnowtaterz Msg: I'm only going to "steal" her if Dbug goes after her Evt: [object Object]
+1545938754161 UID: 314559616954662913 CID: 480844958287396876 U: NaterzSnowtaterz Msg: So it's not stealing Evt: [object Object]
+1545938760785 UID: 314559616954662913 CID: 480844958287396876 U: NaterzSnowtaterz Msg: It's rescuing Evt: [object Object]
+1545938866289 UID: 287954310653018113 CID: 501080333215858728 U: kinny09 Msg: -------- Evt: [object Object]
+1545938880489 UID: 287954310653018113 CID: 501080333215858728 U: kinny09 Msg: <@215548660216365057> Ya online? Evt: [object Object]
+1545939233732 UID: 295652009745448971 CID: 480844958287396876 U: Vabese Msg: _lets make a game "capture gods gift"_ 
+(her original name `Atitia` meant gift of god or something in some obscure language or something when i looked for a name... google is weird and can't really find it anymore) Evt: [object Object]

@@ -1,0 +1,3 @@
+1546801428122 UID: 297459318796713996 CID: 517303057676238851 U: Fellow Human Msg: $addlore Valdern is a stupid cunt who has a iron molten hearth Evt: [object Object]
+1546801428349 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: I added... something related to Valdern Evt: [object Object]
+1546801431693 UID: 506892489282813992 CID: 518413302036955136 U: Thicc Cage Msg: "I have come to talk to the leader!" Evt: [object Object]
