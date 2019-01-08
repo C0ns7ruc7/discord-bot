@@ -187,7 +187,12 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 					
 					speak(result);
 				}else{
-					speak('_<@' + userID+ '>, I have the following topic(s) available:\n_ **' + Object.keys(loreparsed["lore"]) + '**');
+					var listvar = Object.keys(loreparsed["lore"]);
+					var listresult = [];
+					listvar.foreach(function(III){
+						listresult.push(III);
+					});
+					speak('_<@' + userID+ '>, I have the following topic(s) available:\n_ **' + listresult + '**');
 				}
             break;
 			
