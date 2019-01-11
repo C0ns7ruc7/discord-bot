@@ -1,7 +1,3 @@
-
-botcode/node_modules/*
-botcode/data/old_log.txt
-botcode/data/log.txt
-botcode/data/log.txt
-botcode/data/log.txt
-botcode/data/old_log.txt
+botcodeJS/node_modules/*
+botcodeJS/data/log.txt
+botcodeJS/data/old_log.txt
