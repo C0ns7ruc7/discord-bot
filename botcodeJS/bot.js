@@ -1,7 +1,7 @@
 // imported constants and vars
 var Discord = require('discord.io');
 var logger = require('winston');
-var auth = require('./data/auth.json');
+var settings = require('./data/settings.json');
 var randomnumbers = require('./data/rnum.js');
 function rNum(num){return randomnumbers.anum(num);}
 const fs = require('fs');
@@ -15,14 +15,12 @@ logger.level = 'debug';
 
 // Initialize Discord Bot
 var bot = new Discord.Client({
-   token: auth.token,
+   token: settings.token,
    autorun: true
 });
 
 bot.on('ready', function (evt) {
-    logger.info('Connected');
-    logger.info('Logged in as: ');
-    logger.info(bot.username + ' - (' + bot.id + ')');
+    logger.info('Connected and logged in as: ' + bot.username + ' - (' + bot.id + ')');
 
 	fs.rename('./logs/log.txt', './logs/log' + Date.now() + '.txt', (err) => {
 		if (err) throw err;
@@ -65,7 +63,9 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 				'- remove lore with \`rmvlore\` to get rid of it(wip). \n' + 
 				'- there is also the \`mail\` [#channel(or when in DM a number)] {msg}  where you can send to a channel \n' + 
 				'- a functional command is the \`whatis\` [@user/role OR #channel], it shows you the number needed for DM\'ing using the mail function \n' + 
-				'- I also have the \`roll\` command, it works as a automatic 2d6 if you don\'t add comments \n\n' + 
+				'- I also have the \`roll\` command, it works as a automatic 2d6 if you don\'t add comments \n' + 
+				'- then there is the \`die\` command that can shut me down.\n' +
+				'\n' + 
 				'there are a bunch of other things in the works \n' + 
 				'don\'t forget I use \`$\`\'s to react'
 			); 
@@ -219,11 +219,11 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 			break;
 			
 			case 'DIE':
-				if (channelID == '483465099093344276')
+				if (channelID == settings.adminChanel)
 				{
 					die();
 				}else{
-					speak('You can only do that in the \`bot commands\` channel');
+					speak('You can only do that in the <#'+ settings.adminChanel +'> channel');
 				}
 			break;
 			

@@ -1,0 +1,31 @@
+1547551468482 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $help me Evt: [object Object]
+1547551468749 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: this is the help function of the molten bot, I have the following commands that you can use, <@295652009745448971>! 
+
+Ok first up i'm still being made so, be gentle... 
+
+- I have `Ping`, `pong`, `bing`, `bong`, `ree`, `scream`, `beep` and `boop` they are what they are, use em an I will come back at you >=) 
+- then I have the `say` {msg} comand, it makes me repeat you... I don't know why that is here. 
+- I also keep track of `lore` [lore name] things, do a empty command for a list. 
+- you can add things with `addlore` {[first word is key] the rest, explaining stuf} 
+- remove lore with `rmvlore` to get rid of it(wip). 
+- there is also the `mail` [#channel(or when in DM a number)] {msg}  where you can send to a channel 
+- a functional command is the `whatis` [@user/role OR #channel], it shows you the number needed for DM'ing using the mail function 
+- I also have the `roll` command, it works as a automatic 2d6 if you don't add comments 
+- then there is the `die` command that can shut me down.
+
+there are a bunch of other things in the works 
+don't forget I use `$`'s to react Evt: [object Object]
+1547551529133 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: nah, you don't need to, besides what would i need to do hardware-wise? Evt: [object Object]
+1547551538835 UID: 224794221217841153 CID: 517303057676238851 U: clearskiesnl Msg: Raspberry Evt: [object Object]
+1547551542064 UID: 224794221217841153 CID: 517303057676238851 U: clearskiesnl Msg: Thats it Evt: [object Object]
+1547551543108 UID: 224794221217841153 CID: 517303057676238851 U: clearskiesnl Msg: XX Evt: [object Object]
+1547551544648 UID: 224794221217841153 CID: 517303057676238851 U: clearskiesnl Msg: XD* Evt: [object Object]
+1547551579682 UID: 224794221217841153 CID: 517303057676238851 U: clearskiesnl Msg: But i know that with node red you can get the ID's of people who send stuff Evt: [object Object]
+1547551592721 UID: 224794221217841153 CID: 517303057676238851 U: clearskiesnl Msg: Meaning for example the die command could be locked to you Evt: [object Object]
+1547551623458 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: i already can do that,you should be able to see the repo with the logs, those show that i already can see all the ID's Evt: [object Object]
+1547551642982 UID: 224794221217841153 CID: 517303057676238851 U: clearskiesnl Msg: Oh, must have overlooked it! Evt: [object Object]
+1547551659418 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: `1547551642982 UID: 224794221217841153 CID: 517303057676238851 U: clearskiesnl Msg: Oh, must have overlooked it! Evt: [object Object]` Evt: [object Object]
+1547551670285 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: UID Evt: [object Object]
+1547551670687 UID: 224794221217841153 CID: 517303057676238851 U: clearskiesnl Msg: Oh neat Evt: [object Object]
+1547551673875 UID: 224794221217841153 CID: 517303057676238851 U: clearskiesnl Msg: Yea Evt: [object Object]
+1547551734408 UID: 224794221217841153 CID: 517303057676238851 U: clearskiesnl Msg: Aah unix time format Evt: [object Object]
