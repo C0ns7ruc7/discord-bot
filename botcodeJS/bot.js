@@ -1,14 +1,10 @@
-// constants and vars
+// imported constants and vars
 var Discord = require('discord.io');
 var logger = require('winston');
 var auth = require('./data/auth.json');
-
-const ego = require('./data/free_will.js');
-const dice = require('./data/dicey.js');
+var randomnumbers = require('./data/rnum.js')
+function rNum(num){return randomnumbers.anum(num);}
 const fs = require('fs');
-
-const lore = 2;
-
 
 // Configure logger settings
 logger.remove(logger.transports.Console);
@@ -16,18 +12,20 @@ logger.add(new logger.transports.Console, {
     colorize: true
 });
 logger.level = 'debug';
+
 // Initialize Discord Bot
 var bot = new Discord.Client({
    token: auth.token,
    autorun: true
 });
+
 bot.on('ready', function (evt) {
     logger.info('Connected');
     logger.info('Logged in as: ');
     logger.info(bot.username + ' - (' + bot.id + ')');
 
 	fs.rename('./logs/log.txt', './logs/log' + Date.now() + '.txt', (err) => {
-	  if (err) throw err;
+		if (err) throw err;
 	});
 	fs.writeFile('./logs/log.txt', '', 'ascii', (err) => {
 		if (err) throw err;
@@ -45,18 +43,6 @@ bot.on('message', function (user, userID, channelID, message, evt) {
         message: msg + ''
       });
     }
-	function rNum(num){
-//		return Math.floor(Math.random() * num)
-//		return (Math.round(((Math.random() * Math.random()) *10) * Math.random() * 1000)) % num
-//		return Math.random()
-		
-		var data = ((Math.random()*10)+'').replace('.', '').split('');
-		var numb = data[data[0]] * 1;
-		if (numb >= num){
-			numb = numb % num;
-		}
-		return numb;
-	}
     
     if (message.substring(0, 1) == '$' || message.substring(0, 22) == '<@!517269535024349195>') {
         var args = message.substring(1).split(' ');
