@@ -20,14 +20,9 @@ var bot = new Discord.Client({
 });
 
 bot.on('ready', function (evt) {
-    logger.info('Connected and logged in as: ' + bot.username + ' - (' + bot.id + ')');
-
-	fs.rename('./logs/log.txt', './logs/log' + Date.now() + '.txt', (err) => {
-		if (err) throw err;
-	});
-	fs.writeFile('./logs/log.txt', '', 'ascii', (err) => {
-		if (err) throw err;
-	});  
+    logger.info	('Connected, logged in: ' + bot.username + ' -(' + bot.id + ')');
+	fs.rename	('./logs/log.txt', './logs/log' + Date.now() + '.txt', (err) => {if (err) throw err;});
+	fs.writeFile('./logs/log.txt', '', 'ascii', (err) => {if (err) throw err;});  
 });
 
 bot.on('message', function (user, userID, channelID, message, evt) {
@@ -45,12 +40,10 @@ bot.on('message', function (user, userID, channelID, message, evt) {
     }
     
     if (message.substring(0, 1) == '$' || message.substring(0, 22) == '<@!517269535024349195>') {
-        var args = message.substring(1).split(' ');
-        var cmd = args[0].toUpperCase();
-        var args = args.splice(1);
-		var responce = ((rNum(10)) >= 5) ? '?' : '!';
-		
-		logger.info(cmd);
+        var args 		= message.substring(1).split(' ');
+        var cmd  		= args[0].toUpperCase();
+        var args 		= args.splice(1);
+		var responce 	= ((rNum(10)) >= 5) ? '?' : '!';
 		
         switch(cmd) {
 			case 'HELP': speak(
@@ -163,25 +156,35 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             break;
             
 			case 'LORE':
-				let loredata = fs.readFileSync('./data/lorenew.json');  
+				let loredata = fs.readFileSync('./data/lore.json');  
 				let loreparsed = JSON.parse(loredata); 
-				var result = '';
                 if(args[0]) {
 					var find = args.toString().toUpperCase();
 					try {
-					  result = loreparsed["lore"][find][1];
+						var listvar = Object.keys(loreparsed["lore"]);
+						
+						var III, len;
+						for (III = 0, len = listvar.length; III < len; ++III) {
+							if(loreparsed["lore"][III][0] === find){
+								var result = loreparsed["lore"][III][1];
+							}
+						}	
+						if(result){}else{result = "not found, try adding it with `$addlore` '" + args.join(' ') + " + 'soemthing you wrote'";}
+					}catch(err){
+						result = "Something went horribly wrong...";
+						logger.info(err);
 					}
-					catch(err) {
-					  result = "not found";
-					}
-					
 					speak(result);
 				}else{
 					var listvar = Object.keys(loreparsed["lore"]);
 					var listresult = [];
-					listvar.foreach(function(III){
-						listresult.push(III);
-					});
+
+					var III, len;
+					for (III = 0, len = listvar.length; III < len; ++III) {
+						listresult.push(
+							' ' + loreparsed["lore"][III][0].toLowerCase().replace(',', ' ')
+						);
+					}
 					speak('_<@' + userID+ '>, I have the following topic(s) available:\n_ **' + listresult + '**');
 				}
             break;
@@ -189,16 +192,22 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 			case 'ADDLORE':
 				if(args[0]){
 					fs.readFile('./data/lore.json', 'utf8', function (err,data) {
-						if (err) {
-							return console.log(err);
+						if (err) { logger.info(err);}
+						var newdata = JSON.parse(data); 
+						var userdata = [
+							args[0].toUpperCase().replace(/,|\*|_|\`|:/gi, ''),
+							args.join(' ').replace(/\"/g, '\\"').replace(/(?:\r\n|\r|\n)/g, ' '),
+							userID
+						]
+						if(userID){ // TODO: add validation to writing
+							newdata["lore"][(Object.keys(newdata["lore"])).length] = userdata;
+							
+							fs.writeFile('./data/lore.json', JSON.stringify(newdata), 'utf8', function (err) {
+								if (err){logger.info(err)};
+							});
+							speak('I added... something related to ' + args[0]);  
 						}
-						var result = data.replace('\"\}', '\", \"'+ args[0].toUpperCase().replace(/,|\*|_|\`|:/gi, '') + '\": \"' + args.join(' ').replace(/\"/g, '\\"') + '\"\}').replace(/(?:\r\n|\r|\n)/g, ' ');
-
-						fs.writeFile('./data/lore.json', result, 'utf8', function (err) {
-							if (err) return console.log(err);
-						});
 					});
-					speak('I added... something related to ' + args[0]);  
 				}else{
 					speak('\`you eh... need to add some text, just start writing things after the \"$addlore\", you can add embellishments all you like too, by the way.\`');  
 				}
@@ -228,17 +237,17 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 			break;
 			
 			case 'ROLL':
-				if(args[0]){
-					speak('conditional roll');
-				}else{
-					var num1 = rNum(6) + 1;
-					var num2 = rNum(6) + 1;
-					speak( '<@' + userID+ '> has rolled **' + (num1 + num2) + '** ( \`' + num1 + '\`, \`' + num2 + '\` )');
-				}
+				var cmd = args.join('');
+				logger.info(cmd);
+				
+				var num = [rNum(6) + 1, rNum(6) + 1];
+				
+				speak( '<@' + userID+ '> has rolled **' + (num[0] + num[1]) + '** ( \`' + num[0] + '\`, \`' + num[1] + '\` )');
 			break;
             
             default:
-                speak('ehm... ok? try running \`$help\`');
+                speak('Try running \`$help\`');
+				logger.info(cmd);
             break;
         }
      }

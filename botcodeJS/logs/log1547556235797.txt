@@ -1,0 +1,3 @@
+1547556126299 UID: 215548660216365057 CID: 491992251342520349 U: UnitedRebel Msg: (THEY HAVE LIGHTS) Evt: [object Object]
+1547556130384 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: my bot randomly shuts itself down.. Evt: [object Object]
+1547556141243 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: like no errors, just 'ded' Evt: [object Object]

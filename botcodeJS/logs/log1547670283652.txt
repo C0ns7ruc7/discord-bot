@@ -1,0 +1,6 @@
+1547670139865 UID: 114793169102700546 CID: 526541844281294849 U: TheLastShogun Msg: *He turns to the door.*
+
+"Clear?"
+"YES, SIR!"
+"Excellent." Evt: [object Object]
+1547670145379 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $addlore **deebug,** _he's the bug in reality, watch out_ Evt: [object Object]

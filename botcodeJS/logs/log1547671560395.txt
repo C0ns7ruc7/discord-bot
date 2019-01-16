@@ -1,0 +1,10 @@
+1547671392187 UID: 524655236824956938 CID: 526541844281294849 U: Chief Engineer Witold Jens Msg: *Rurik War Machine begins to march towards the Thunder Child, albeit slowly and carefully, as if not to disturb anyone* Evt: [object Object]
+1547671420226 UID: 114793169102700546 CID: 526541844281294849 U: TheLastShogun Msg: *Solomon looks out the window* "Uhh, chief? Evt: [object Object]
+1547671451853 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $addlore **Greebel**, _it's the resident lore bot, the local `Harold` that is here doing things_ Evt: [object Object]
+1547671452133 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: I added... something related to **Greebel**, Evt: [object Object]
+1547671484982 UID: 524655236824956938 CID: 526541844281294849 U: Chief Engineer Witold Jens Msg: *Turns around,* ¨Ah. Bugger.¨ Evt: [object Object]
+1547671495480 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $lore greebel Evt: [object Object]
+1547671531293 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $lore Evt: [object Object]
+1547671531537 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: _<@295652009745448971>, I have the following topic(s) available:
+_ ** suspendium, molten, moon disks, ubergrad, sofia, clear, pontimus, titan, dachi, vabese, patosav, churchofpoi, site-113, valdern, max, kinny, lakkin, lukas** Evt: [object Object]
+1547671537086 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: humm... Evt: [object Object]
