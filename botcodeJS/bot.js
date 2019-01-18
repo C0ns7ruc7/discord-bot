@@ -156,7 +156,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 		}
 	}); 
 
-	if (Math.floor(Math.random() * 30000) <= 300){
+	if (Math.floor(Math.random() * 30000) <= 100){
 		bot.sendMessage({
 			to: '481133060348182550',
 			message: "\`Random lore!:\` " + modules.randomLore(fs, logger)

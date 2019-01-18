@@ -5,9 +5,9 @@ module.exports = {
 			'- I have \`Ping\`, \`pong\`, \`bing\`, \`bong\`, \`ree\`, \`scream\`, \`beep\` and \`boop\` they are what they are, use em an I will come back at you >=\) \n' + 
 			'- then I have the \`say\` {msg} comand, it makes me repeat you... I don\'t know why that is here. \n' + 
 			'- I also keep track of \`lore\` [lore name] things, do a empty command for a list. \n' +
-			'- you can add things with \`addlore\` {[first word is key] the rest, explaining stuf} \n' + 
+			'- you can add things with \`addlore\` the first word is used as search method, the owner of a word can overwrite with the same command \n' + 
 			'- if you just want any lore, use \`rlore\` for random stuff.\n' +
-			'- remove lore with \`rmvlore\` to get rid of it(wip). \n' + 
+			'- remove lore with \`rmvlore\` to get rid of it completely(not implimented). \n' + 
 			'- there is also the \`mail\` [#channel(or when in DM a number)] {msg}  where you can send to a channel \n' + 
 			'- a functional command is the \`whatis\` [@user/role OR #channel], it shows you the number needed for DM\'ing using the mail function \n' + 
 			'- I also have the \`roll\` command, it works as a automatic 2d6 if you don\'t add comments \n' + 
@@ -36,7 +36,7 @@ module.exports = {
 			return (
 				'_<@' 
 				+ userID
-				+ '> the deciphered things you said:_' 
+				+ '>\` the deciphered things you said:\`_ ' 
 				+ args.join(' ')
 				.replace(/<|>|@/gi, '')
 				.replace(/#/gi, ' Channel:')
@@ -115,17 +115,17 @@ module.exports = {
 					' ' + loreparsed["lore"][III][0].toLowerCase().replace(',', ' ')
 				);
 			}
-			return('_<@' + userID+ '>, I have the following topic(s) available:\n_ **' + listresult + '**');
+			return('_<@' + userID+ '>, \`I have the following topic(s) available:\`\n_ **' + listresult + '**');
 		}
 	},
 	
 	randomLore: function(fs, logger){
 		let loredata = fs.readFileSync('./data/lore.json');  
 		let loreparsed = JSON.parse(loredata);
-		var result = "Something went horribly wrong...";		
+		var result = "\`Something went horribly wrong...\`";		
 		try {
 			var listvar = Object.keys(loreparsed["lore"]);
-			result = loreparsed["lore"][this.randomNum(listvar.length)-1][1]
+			result = loreparsed["lore"][this.randomNum(listvar.length)][1]
 		}catch(err){
 			logger.info(err);
 		}
@@ -145,6 +145,7 @@ module.exports = {
 			});
 			var newdata = JSON.parse(data); 
 			var listvar = Object.keys(newdata["lore"]);
+			var done = false;
 			
 			var III, len;
 			for (III = 0, len = listvar.length; III < len; ++III) {
@@ -155,13 +156,16 @@ module.exports = {
 							args.join(' '),
 							userID
 						];
-						loreResult = "edited data";
+						loreResult = "\`edited '" + objectKey.toLowerCase() + "' data\`";
 						var done = true;
+						break;
 					}
-					loreResult = "you don't own the data";
+					loreResult = "\`you don't own the lore about '" + objectKey.toLowerCase() + "'\`";
+					var done = true;
+					break;
 				}
 			}	
-			if(done === false){
+			if(!done){
 				newdata["lore"][(Object.keys(newdata["lore"])).length] = [
 					objectKey,
 					args.join(' '),
