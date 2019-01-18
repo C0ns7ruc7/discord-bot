@@ -1,0 +1,5 @@
+1547809764515 UID: 224794221217841153 CID: 517303057676238851 U: clearskiesnl Msg: Hmm.. Evt: [object Object]
+1547809782606 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: i fixed that issue Evt: [object Object]
+1547809786051 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: _just now_ Evt: [object Object]
+1547809787909 UID: 224794221217841153 CID: 517303057676238851 U: clearskiesnl Msg: $lore charles valdern Evt: [object Object]
+1547809788080 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: not found, try adding it with `$addlore` 'charles valdern + 'soemthing you wrote' Evt: [object Object]

@@ -1,0 +1,4 @@
+1547843685020 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $addlore ***`Molten`**: while not entirely accurate to call them that, the metal born monsters of a ancient biotech are aptly described as such with fire always being on their heels, it is recommended to just get out of the way. they recently mostly left the planet to settle somewhere else... since then the darkness has been interrupted by unplanned light shows* Evt: [object Object]
+1547843685246 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: `I added... something related to molten.` Evt: [object Object]
+1547843763447 UID: 226006496876560384 CID: 493173316559962132 U: Orang Msg:  Evt: [object Object]
+1547843818589 UID: 114793169102700546 CID: 493173316559962132 U: TheLastShogun Msg: ~~Idun'geddit~~ Evt: [object Object]

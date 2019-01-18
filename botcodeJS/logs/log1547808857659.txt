@@ -1,0 +1,60 @@
+1547807356843 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $addlore SpinGrad 
+------------------------------------------------
+[backstory]: Spinning Ubergrad(Spingrad)
+
+once upon a time, a certain Molten created madman, made for eradicating gods and so-called 'devine' decided to randomly mess around with a country using a randomly picked method of torment, in this case it was Ubergrad, a unlucky empire who was just minding its own business. the method what the torment was "moving ground", the Joker(sometimes referred under similar names or as The Exiled by the Molten themselves) then made this happen to Ubergrad, constantly, day and night.
+
+the ores were formed into machinery, the ground was split apart with precision, the water flowed down under the plates and as the heat flowed  into the machines the "plates" started to turn... and turn they did, now the capital is the only city in the world to face the west, north and east coast of its borders on a given day.
+
+after much deliberation they made a drill machine dig down into one of the plates, after a long time(several KM's) they made their way into a machine room... the place was covered in darkness and everything in the unseen space was moving with cogs and gears, moving bands of metal and steel... the expedition eventually made their way into the center where there was a control hub, they did so however at a cost of losing many limbs, no casualties, and a loss of sanity for a few of them. the plate they were on was stopped only after the creator of them showed up to rave and rant and decided to stop it himself.
+------------------------------------------------ Evt: [object Object]
+1547807356998 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: I added... something related to SpinGrad Evt: [object Object]
+1547807366844 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $lore spingrad Evt: [object Object]
+1547807367039 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: SpinGrad 
+------------------------------------------------
+[backstory]: Spinning Ubergrad(Spingrad)
+
+once upon a time, a certain Molten created madman, made for eradicating gods and so-called 'devine' decided to randomly mess around with a country using a randomly picked method of torment, in this case it was Ubergrad, a unlucky empire who was just minding its own business. the method what the torment was "moving ground", the Joker(sometimes referred under similar names or as The Exiled by the Molten themselves) then made this happen to Ubergrad, constantly, day and night.
+
+the ores were formed into machinery, the ground was split apart with precision, the water flowed down under the plates and as the heat flowed  into the machines the "plates" started to turn... and turn they did, now the capital is the only city in the world to face the west, north and east coast of its borders on a given day.
+
+after much deliberation they made a drill machine dig down into one of the plates, after a long time(several KM's) they made their way into a machine room... the place was covered in darkness and everything in the unseen space was moving with cogs and gears, moving bands of metal and steel... the expedition eventually made their way into the center where there was a control hub, they did so however at a cost of losing many limbs, no casualties, and a loss of sanity for a few of them. the plate they were on was stopped only after the creator of them showed up to rave and rant and decided to stop it himself.
+------------------------------------------------ Evt: [object Object]
+1547807386768 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $addlore **SpinGrad** 
+------------------------------------------------
+[backstory]: Spinning `Ubergrad`(Spingrad)
+
+_once upon a time, a certain `Molten` created madman, made for eradicating gods and so-called 'devine' decided to randomly mess around with a country using a randomly picked method of torment, in this case it was `Ubergrad`, a unlucky empire who was just minding its own business. the method what the torment was "moving ground", `the Joker`(sometimes referred under similar names or as `The Exiled` by the `Molten` themselves) then made this happen to `Ubergrad`, constantly, day and night.
+
+the ores were formed into machinery, the ground was split apart with precision, the water flowed down under the plates and as the heat flowed  into the machines the "plates" started to turn... and turn they did, now the capital is the only city in the world to face the west, north and east coast of its borders on a given day.
+
+after much deliberation they made a drill machine dig down into one of the plates, after a long time(several KM's) they made their way into a machine room... the place was covered in darkness and everything in the unseen space was moving with cogs and gears, moving bands of metal and steel... the expedition eventually made their way into the center where there was a control hub, they did so however at a cost of losing many limbs, no casualties, and a loss of sanity for a few of them. the plate they were on was stopped only after the creator of them showed up to rave and rant and decided to stop it himself._
+------------------------------------------------ Evt: [object Object]
+1547807386915 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: I added... something related to **SpinGrad** Evt: [object Object]
+1547807394793 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $lore spingrad Evt: [object Object]
+1547807394944 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: **SpinGrad** 
+------------------------------------------------
+[backstory]: Spinning `Ubergrad`(Spingrad)
+
+_once upon a time, a certain `Molten` created madman, made for eradicating gods and so-called 'devine' decided to randomly mess around with a country using a randomly picked method of torment, in this case it was `Ubergrad`, a unlucky empire who was just minding its own business. the method what the torment was "moving ground", `the Joker`(sometimes referred under similar names or as `The Exiled` by the `Molten` themselves) then made this happen to `Ubergrad`, constantly, day and night.
+
+the ores were formed into machinery, the ground was split apart with precision, the water flowed down under the plates and as the heat flowed  into the machines the "plates" started to turn... and turn they did, now the capital is the only city in the world to face the west, north and east coast of its borders on a given day.
+
+after much deliberation they made a drill machine dig down into one of the plates, after a long time(several KM's) they made their way into a machine room... the place was covered in darkness and everything in the unseen space was moving with cogs and gears, moving bands of metal and steel... the expedition eventually made their way into the center where there was a control hub, they did so however at a cost of losing many limbs, no casualties, and a loss of sanity for a few of them. the plate they were on was stopped only after the creator of them showed up to rave and rant and decided to stop it himself._
+------------------------------------------------ Evt: [object Object]
+1547807398246 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $lore Evt: [object Object]
+1547807398391 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: _<@295652009745448971>, I have the following topic(s) available:
+_ ** suspendium, molten, moon disks, ubergrad, sofia, clear, pontimus, titan, dachi, vabese, patosav, churchofpoi, site-113, valdern, max, kinny, lakkin, lukas, greebel, city-streets, spingrad** Evt: [object Object]
+1547807432055 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: welp, removed the filters... now it works Evt: [object Object]
+1547807464290 UID: 114793169102700546 CID: 517303057676238851 U: TheLastShogun Msg: Wuwuwuwait. The Joker was designed to fight gods and the supernatural? Evt: [object Object]
+1547807483867 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: to kill `Umbra` as a last-ditch effort(at the time) Evt: [object Object]
+1547807516971 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: he was biggest lose `Molten` at the time Evt: [object Object]
+1547807531061 UID: 114793169102700546 CID: 517303057676238851 U: TheLastShogun Msg: https://i.imgflip.com/2jkypf.jpg Evt: [object Object]
+1547807586240 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: _well with how everything is set up, no PC's can die, then the alternative of 'forever stalling' is the alternative_ Evt: [object Object]
+1547807634042 UID: 215548660216365057 CID: 510474774418554881 U: UnitedRebel Msg: ‘.....You know, I can easily visit you right? Also that’s the nature of being human. If you want humanity to really and truly prosper: give them a outside threat to force them to be under a single banner.” Evt: [object Object]
+1547807658966 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: when he redirected `Umbra` to `RE` i was 80% sure it would end up with her in 50/50 contained or dead situation Evt: [object Object]
+1547807712869 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: _wichs in a way did happen... if you followed the rune curse story_ Evt: [object Object]
+1547807828459 UID: 215548660216365057 CID: 510474774418554881 U: UnitedRebel Msg: ‘But. I won’t stop you if you want to leave.......somehow’ Evt: [object Object]
+1547807833317 UID: 295652009745448971 CID: 510474774418554881 U: Vabese Msg: _((`joker`: "my plans! they were seen through!"))_ Evt: [object Object]
+1547808057623 UID: 215548660216365057 CID: 510474774418554881 U: UnitedRebel Msg: *The sounds of Ak fire followed by the sound of people getting sliced and screams* ‘Frankly, I think that you truly do care about humanity, but me destroying your village and a sorry excuse you called “The war to end all wars” really forced you to see humanity in a bad light’ Evt: [object Object]
+1547808807382 UID: 224794221217841153 CID: 510474774418554881 U: clearskiesnl Msg: "... Who are you killing?" Evt: [object Object]

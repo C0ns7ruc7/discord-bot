@@ -1,0 +1,7 @@
+1547844584381 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $addlore ***`Molten`**: while not entirely accurate to call them that, the metal born monsters of a ancient biotech are aptly described as such with fire always being on their heels, it is recommended to just get out of the way. they recently mostly left the planet to settle somewhere else... since then the darkness has been interrupted by unplanned light shows* Evt: [object Object]
+1547844584591 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: `I added... something related to molten.` Evt: [object Object]
+1547844659104 UID: 224794221217841153 CID: 517303057676238851 U: clearskiesnl Msg: Whats with the asterisk? Evt: [object Object]
+1547844714929 UID: 314559616954662913 CID: 520574965024555008 U: Naterz Msg: *They immediately feel nervous and some think it might not be a good idea to go inside.* Evt: [object Object]
+1547844777514 UID: 224794221217841153 CID: 520574965024555008 U: clearskiesnl Msg: *Adessa watches closely and is tempted to activate the anchor* Evt: [object Object]
+1547844807799 UID: 314559616954662913 CID: 520574965024555008 U: Naterz Msg: *Nothing that happens inside the room can be seen or heard on the outside.* Evt: [object Object]
+1547844835635 UID: 224794221217841153 CID: 520574965024555008 U: clearskiesnl Msg: *that is why it is tempting* Evt: [object Object]

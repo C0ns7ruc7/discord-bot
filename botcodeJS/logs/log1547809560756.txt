@@ -1,0 +1,12 @@
+1547809381244 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $addlore the-new_space
+with a newline and stuff... Evt: [object Object]
+1547809381423 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: I added... something related to the-new_space
+with Evt: [object Object]
+1547809386176 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $lore Evt: [object Object]
+1547809386329 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: _<@295652009745448971>, I have the following topic(s) available:
+_ ** suspendium, molten, moon disks, ubergrad, sofia, clear, pontimus, titan, dachi, vabese, patosav, churchofpoi, site-113, valdern, max, kinny, lakkin, lukas, greebel, city-streets, spingrad, the new space** Evt: [object Object]
+1547809394453 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $lore the new space Evt: [object Object]
+1547809394670 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: not found, try adding it with `$addlore` 'the new space + 'soemthing you wrote' Evt: [object Object]
+1547809434605 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $lore the new space Evt: [object Object]
+1547809434776 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: the-new_space
+with a newline and stuff... Evt: [object Object]

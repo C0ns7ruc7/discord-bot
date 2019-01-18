@@ -1,0 +1,7 @@
+1547829354528 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $addlore junk-data this is completely useless lore, or is it? Evt: [object Object]
+1547829354792 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: empty... Evt: [object Object]
+1547829363962 UID: 313205329716576256 CID: 480844958287396876 U: Dictatorputski Msg: New mouse and keyboard boys Evt: [object Object]
+1547829380859 UID: 313205329716576256 CID: 480844958287396876 U: Dictatorputski Msg: tryna get used to not using the home button as the spacebar Evt: [object Object]
+1547829419924 UID: 224794221217841153 CID: 480844958287396876 U: clearskiesnl Msg: home button as spacebar? Evt: [object Object]
+1547829421264 UID: 224794221217841153 CID: 480844958287396876 U: clearskiesnl Msg: the fuck? Evt: [object Object]
+1547829449210 UID: 313205329716576256 CID: 480844958287396876 U: Dictatorputski Msg: yeah, on my last keyboard, the spacebar was broken Evt: [object Object]

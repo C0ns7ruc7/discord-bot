@@ -1,0 +1,22 @@
+1547829871098 UID: 224794221217841153 CID: 480844958287396876 U: clearskiesnl Msg: yup Evt: [object Object]
+1547829872373 UID: 313205329716576256 CID: 480844958287396876 U: Dictatorputski Msg: just a gamer Evt: [object Object]
+1547829875950 UID: 313205329716576256 CID: 480844958287396876 U: Dictatorputski Msg: 900IQ Evt: [object Object]
+1547829884915 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $lore Evt: [object Object]
+1547829885143 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: _<@295652009745448971>, I have the following topic(s) available:
+_ ** suspendium, molten, moon disks, ubergrad, sofia, clear, pontimus, titan, dachi, vabese, patosav, churchofpoi, site-113, valdern, max, kinny, lakkin, lukas, greebel, city streets, spingrad, theocrasis** Evt: [object Object]
+1547829886434 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $addlore junk-data this is completely useless lore, or is it? Evt: [object Object]
+1547829886664 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: undefined Evt: [object Object]
+1547829889999 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $lore Evt: [object Object]
+1547829890199 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: _<@295652009745448971>, I have the following topic(s) available:
+_ ** suspendium, molten, moon disks, ubergrad, sofia, clear, pontimus, titan, dachi, vabese, patosav, churchofpoi, site-113, valdern, max, kinny, lakkin, lukas, greebel, city streets, spingrad, theocrasis, junk data** Evt: [object Object]
+1547829896785 UID: 224794221217841153 CID: 480844958287396876 U: clearskiesnl Msg: my middle mouse button is defect, i have a secondary
+\ button to the left of my keyboard so i use that instead Evt: [object Object]
+1547829902588 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: _somehow it's fucking with me_ Evt: [object Object]
+1547829909859 UID: 224794221217841153 CID: 517303057676238851 U: clearskiesnl Msg: how so? Evt: [object Object]
+1547829926085 UID: 313205329716576256 CID: 480844958287396876 U: Dictatorputski Msg: i have 2 spare buttons now Evt: [object Object]
+1547829942517 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: `undefined` is supposed to be a response, saying yes, no or 'you get the point' Evt: [object Object]
+1547829954701 UID: 224794221217841153 CID: 480844958287396876 U: clearskiesnl Msg: i have 9 buttons my keyboard can use for other fuctions, whats your keyboard? Evt: [object Object]
+1547829959678 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: but return/var's are not DOING ANYTHING Evt: [object Object]
+1547830120478 UID: 313205329716576256 CID: 480844958287396876 U: Dictatorputski Msg: Razer ornata chroma Evt: [object Object]
+1547830130639 UID: 295652009745448971 CID: 504279989567488000 U: Vabese Msg: `Pontimus`:"enjoy the world and grow old, or maybe something will happen before that, I'm not sure" Evt: [object Object]
+1547830219240 UID: 313205329716576256 CID: 504279989567488000 U: Dictatorputski Msg: "Considering the knife edge said world's teetering on, i'd say there'll still be something interesting to see within your lifespan" Evt: [object Object]

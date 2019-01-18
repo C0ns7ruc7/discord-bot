@@ -1,0 +1,3 @@
+1547831065853 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $addlore $addlore junk-data this is completely useless lore, or is it? Evt: [object Object]
+1547831066075 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: - Evt: [object Object]
+1547831185779 UID: 371341315310616576 CID: 507269614548287498 U: primaris Msg: *the specialised suits had been made, they where quite bulky and kept the original gas mask look, now to build the trasport* Evt: [object Object]
