@@ -17,13 +17,22 @@ module.exports = {
 			'don\'t forget I use \`$\`\'s to react';
 		},
 	
-	randomNum: function(num){
-		var data = ((Math.random()*10)+'').replace('.', '').split('');
+	randomNum: function(/* num */ max, min){
+/*		var data = ((Math.random()*10)+'').replace('.', '').split('');
 		var numb = data[data[0]] * 1;
-		if (numb >= num){
-			numb = numb % num;
+		if (num <= num){
+			numb = (numb + '' + data[data[1]]) * 1
 		}
-		return numb;
+		while (numb >= num){
+			numb = numb / 2.5;
+		}
+		numb = Math.floor(numb * 1);
+		return numb;*/
+		
+		if(!min){ min = 0; }else{ min = min *1; }
+		if(!max){ max = 0; }else{ max = max *1; }
+		
+		return Math.floor(Math.random() * (max - min) ) + min;
 	},
 	
 	randomResponce: function(inputArray){

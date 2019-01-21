@@ -66,6 +66,8 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 			case 'RLORE'	: speak("\`Random lore!:\` " + modules.randomLore(fs, logger)); break;
 			case 'ADDLORE'	: speak(modules.setLore(args, userID, fs, logger)); break;
 			
+			case 'RANDNUM'	:speak('gave number: \`' + args[0] + '\` result is: \`' + rNum(args[0]) + '\`'); break;
+			
 			case 'MAIL': 
 				var intermediary = modules.sendText(args, channelID, userID); // TODO: make this nicer
 				speak(intermediary[1], intermediary[2]); 
@@ -156,7 +158,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 		}
 	}); 
 
-	if (Math.floor(Math.random() * 30000) <= 100){
+	if (Math.floor(Math.random() * 30000) <= 300){
 		bot.sendMessage({
 			to: '481133060348182550',
 			message: "\`Random lore!:\` " + modules.randomLore(fs, logger)
