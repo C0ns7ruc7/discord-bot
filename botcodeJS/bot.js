@@ -135,10 +135,35 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 			break;
 			
 			case 'ROLL':
-				var cmd = args.join('');
+				var cmd = args.join('').toUpperCase();
 				logger.info(cmd);
-				cmd = cmd.split(''),
-				logger.info(cmd);
+				
+				var len, IV, psvar, result;
+				
+				psvar = cmd.split('');
+				for(IV = 0, len = cmd.length; IV < len; ++IV){
+					
+					switch(cmd[IV]){
+						case !isNaN(cmd[IV]): 
+							psvar = cmd[IV];
+						break;
+						case 'D': 
+							
+						break;
+						case '+': 
+							
+						break;
+						case '-': 
+							
+						break;
+						default: 
+							
+						break;
+					}
+					
+					logger.info("result: "+result);
+					logger.info("psvar: "+psvar);
+				}
 				
 				var num = [rNum(6) + 1, rNum(6) + 1];
 				

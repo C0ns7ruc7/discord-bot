@@ -1,0 +1,5 @@
+1548079550932 UID: 375967251804848128 CID: 526518241590509578 U: Tatourmi Msg: "Time and tide wait for no man, but it is theorized that it does wait for certain breeds of dog." Evt: [object Object]
+1548079563988 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $roll 2d6+1 Evt: [object Object]
+1548079564170 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: <@295652009745448971> has rolled **9** ( `5`, `4` ) Evt: [object Object]
+1548079584683 UID: 375967251804848128 CID: 526110789606834216 U: Tatourmi Msg: "The trick to winning a battle for a heavily defended fortress with impenetrable fortifications is to be the one in the fortress. If you are not, endeavor to make sure that the enemy stay there." should be reworked methinks Evt: [object Object]
+1548079588403 UID: 375967251804848128 CID: 526110789606834216 U: Tatourmi Msg: It's almost there in my mind Evt: [object Object]
