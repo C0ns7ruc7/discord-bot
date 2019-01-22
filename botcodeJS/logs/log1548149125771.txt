@@ -1,0 +1,12 @@
+1548146103920 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $lore Evt: [object Object]
+1548146104094 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: _<@295652009745448971>, `I have the following topic(s) available:`
+_ ** suspendium, moon disks, ubergrad, sofia, pontimus, titan, dachi, vabese, patosav, churchofpoi, site-113, valdern, kinny, lukas, greebel, city streets, spingrad, theocrasis, lakkin, molten, max, clear, primaris, royal empire, sccai, scacpsf, nsr, saekha, naterz, fellowhuman, throbwobbles, reason cthulhu, igra aluminum, reason gatling, diablo suspendium, igra pirate, igra turtles, igra buzzsaw, igra vulcan, reason lancre, reason soulengi, reason ring, reason buzzsaw, reason nessie, reason tickwork, puts ghosts, diablo kraken, nate dicey, tsl gundium, diablo kettlesen, igra doves, reason automatons, igra scawork, shittrends skateboarding, molten history, reason knurd, reason inventor, cat suspendium, reason pear, reason euclid, reason svejari, gustaf panties, reason cults, pikoul fortress, clear war, pikoul religion, pikoul time, pikoul quotes, reason boarding** Evt: [object Object]
+1548146677577 UID: 224794221217841153 CID: 517303057676238851 U: clearskiesnl Msg: Knurd? Evt: [object Object]
+1548146870841 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $lore reason knurd Evt: [object Object]
+1548146871004 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: reason-knurd
+"It is a curious phenomenon that by drinking Suspendium-infused Vodka one may become Knurd, the polar opposite of drunk. With such an awakening and realizing sensation this brings, almost everyone who experiences it makes sure they never become Knurd again." Evt: [object Object]
+1548146922366 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: working on 'pages' for the lore Evt: [object Object]
+1548147042414 UID: 224794221217841153 CID: 493173316559962132 U: clearskiesnl Msg:  Evt: [object Object]
+1548147046990 UID: 224794221217841153 CID: 493173316559962132 U: clearskiesnl Msg: Atlong last Evt: [object Object]
+1548147055676 UID: 224794221217841153 CID: 493173316559962132 U: clearskiesnl Msg: Snow Evt: [object Object]
+1548147849867 UID: 295652009745448971 CID: 493173316559962132 U: Vabese Msg: it's snowing here right now... it may snow all day long Evt: [object Object]

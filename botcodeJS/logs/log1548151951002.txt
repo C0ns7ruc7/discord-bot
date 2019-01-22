@@ -1,0 +1,2 @@
+1548151814751 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $lore 1 Evt: [object Object]
+1548151814927 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: not found, try adding it with `$addlore` '1 + 'soemthing you wrote' Evt: [object Object]

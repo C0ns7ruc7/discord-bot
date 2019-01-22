@@ -4,7 +4,7 @@ module.exports = {
 			'Ok first up i\'m still being made so, be gentle... \n\n' + 
 			'- I have \`Ping\`, \`pong\`, \`bing\`, \`bong\`, \`ree\`, \`scream\`, \`beep\` and \`boop\` they are what they are, use em an I will come back at you >=\) \n' + 
 			'- then I have the \`say\` {msg} comand, it makes me repeat you... I don\'t know why that is here. \n' + 
-			'- I also keep track of \`lore\` [lore name] things, do a empty command for a list. \n' +
+			'- I also keep track of \`lore\` [lore name] things, do a empty command for a list. When I have too much lore you can do \'`\$lore`\ \`$#\`\' for going between pages. \n' +
 			'- you can add things with \`addlore\` the first word is used as search method, the owner of a word can overwrite with the same command \n' + 
 			'- if you just want any lore, use \`rlore\` for random stuff.\n' +
 			'- remove lore with \`rmvlore\` to get rid of it completely(not implimented). \n' + 
@@ -97,7 +97,7 @@ module.exports = {
 	getLore: function(args, userID, fs, logger){
 		let loredata = fs.readFileSync('./data/lore.json');  
 		let loreparsed = JSON.parse(loredata); 
-		if(args[0]) {
+		if(args[0] && !(args[0].substring(0, 1) == '$')) {
 			var find = args.toString().toUpperCase();
 			try {
 				var listvar = Object.keys(loreparsed["lore"]);
@@ -115,6 +115,10 @@ module.exports = {
 			}
 			return(result);
 		}else{
+			if(args[0]){
+				var args = args[0].split('$');
+				var cmd = (!isNaN(args[1])) ? args[1] : 0;
+			}
 			var listvar = Object.keys(loreparsed["lore"]);
 			var listresult = [];
 
@@ -123,8 +127,27 @@ module.exports = {
 				listresult.push(
 					' ' + loreparsed["lore"][III][0].toLowerCase().replace(',', ' ')
 				);
+			}		
+			
+			if(listresult.join(' ').length > 1800){
+				var pages = Math.ceil(listresult.join(' ').length / 1800);
+				var previousPage = [];
+				
+				if(cmd){
+					while(previousPage.join(' ').length <= (1800 * cmd)){
+						previousPage.push(listresult.shift());
+					}
+				}else{
+					while(listresult.join(' ').length > 1800){
+						listresult.pop();
+					}
+				}
+				pages++;
+				var page = (cmd) ? ((cmd * 1) + 1) : 1;
+				return('_<@' + userID+ '>, \`I have the following topic(s) available:(page: ' + page + '/of/' + pages + ' )\`\n_ **' + listresult + '**');
+			}else{
+				return('_<@' + userID+ '>, \`I have the following topic(s) available:\`\n_ **' + listresult + '**');
 			}
-			return('_<@' + userID+ '>, \`I have the following topic(s) available:\`\n_ **' + listresult + '**');
 		}
 	},
 	
@@ -142,11 +165,10 @@ module.exports = {
 	},
 	
 	setLore: function(args, userID, fs, logger){
-		var loreResult;
 		if(args[0]){
 			var objectKey = args[0]
 				.toUpperCase()
-				.replace(/,|\*|\`|:/gi, '')
+				.replace(/,|\"|\*|\`|:/gi, '')
 				.split('\n')[0]
 				.replace(/_|-/g, ',');
 			let data = fs.readFileSync('./data/lore.json', function (err) {
@@ -156,7 +178,7 @@ module.exports = {
 			var listvar = Object.keys(newdata["lore"]);
 			var done = false;
 			
-			var III, len;
+			var III, len, loreResult;
 			for (III = 0, len = listvar.length; III < len; ++III) {
 				if(newdata["lore"][III][0] === objectKey){
 					if(newdata["lore"][III][2] === userID){
@@ -180,7 +202,7 @@ module.exports = {
 					args.join(' '),
 					userID
 				];
-				loreResult = "\`I added: " + objectKey.toLowerCase() + '.\`';
+				loreResult = "\`I added: " + objectKey.toLowerCase().replace(/_|-/g, ' '); + '.\`';
 			}
 			fs.writeFile('./data/lore.json', JSON.stringify(newdata), 'utf8', function (err) {
 				if (err){logger.info(err)};

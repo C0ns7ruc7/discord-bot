@@ -1,0 +1,52 @@
+1548152319699 UID: 224794221217841153 CID: 517303057676238851 U: clearskiesnl Msg: No caps needed mate Evt: [object Object]
+1548152336305 UID: 224794221217841153 CID: 517303057676238851 U: clearskiesnl Msg: $lore valdern Evt: [object Object]
+1548152336497 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: valdern "Valdern was once a mental personality of Clear untill it manifested itself as a seperate entity by violently taking Clear's spine and forming himself a new body" Evt: [object Object]
+1548152344027 UID: 224794221217841153 CID: 517303057676238851 U: clearskiesnl Msg: Ima change that.. Evt: [object Object]
+1548152391426 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: i mean we should do the random lore stuff as two names, like 'autor-subject' for them not really bing cannon and more of a opinion but still lore-like Evt: [object Object]
+1548152420479 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $help Evt: [object Object]
+1548152420667 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: this is the help function of the molten bot, I have the following commands that you can use, <@295652009745448971>! 
+
+Ok first up i'm still being made so, be gentle... 
+
+- I have `Ping`, `pong`, `bing`, `bong`, `ree`, `scream`, `beep` and `boop` they are what they are, use em an I will come back at you >=) 
+- then I have the `say` {msg} comand, it makes me repeat you... I don't know why that is here. 
+- I also keep track of `lore` [lore name] things, do a empty command for a list. When I have too much lore you can do '`$lore` `$pagenumber`' 
+- you can add things with `addlore` the first word is used as search method, the owner of a word can overwrite with the same command 
+- if you just want any lore, use `rlore` for random stuff.
+- remove lore with `rmvlore` to get rid of it completely(not implimented). 
+- there is also the `mail` [#channel(or when in DM a number)] {msg}  where you can send to a channel 
+- a functional command is the `whatis` [@user/role OR #channel], it shows you the number needed for DM'ing using the mail function 
+- I also have the `roll` command, it works as a automatic 2d6 if you don't add comments 
+- then there is the `die` command that can shut me down.
+
+there are a bunch of other things in the works 
+don't forget I use `$`'s to react Evt: [object Object]
+1548152496513 UID: 158664072936685568 CID: 517303057676238851 U: Gustaf V Msg: $lore gustaf Evt: [object Object]
+1548152496664 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: not found, try adding it with `$addlore` 'gustaf + 'soemthing you wrote' Evt: [object Object]
+1548152502527 UID: 158664072936685568 CID: 517303057676238851 U: Gustaf V Msg: $lore gustaf panties Evt: [object Object]
+1548152502687 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: gustaf-panties
+"Grenadiers often steal the regimental flag of their jäger counterparts only to replace them with woman's underwear." Evt: [object Object]
+1548152515730 UID: 158664072936685568 CID: 517303057676238851 U: Gustaf V Msg: Oh yes that one Evt: [object Object]
+1548152519809 UID: 158664072936685568 CID: 517303057676238851 U: Gustaf V Msg: That was an okayone Evt: [object Object]
+1548152570693 UID: 224794221217841153 CID: 517303057676238851 U: clearskiesnl Msg: $addlore *"`Valdern` otherwise known as `Charles Valdern` is a mysterious figure that showed up and was voted to become the new President of the NSR, however, only known to two people alive, `Valdern` is the living embodiment of Clearsworth rage and anger, up to now his devious plans are unknown"* Evt: [object Object]
+1548152570856 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: `I added: "valdern.` Evt: [object Object]
+1548152576329 UID: 224794221217841153 CID: 517303057676238851 U: clearskiesnl Msg: ... fuck Evt: [object Object]
+1548152582942 UID: 224794221217841153 CID: 517303057676238851 U: clearskiesnl Msg: Caaat Evt: [object Object]
+1548152587971 UID: 224794221217841153 CID: 517303057676238851 U: clearskiesnl Msg: I made a boo boo Evt: [object Object]
+1548152613267 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $lore Evt: [object Object]
+1548152613494 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: _<@295652009745448971>, `I have the following topic(s) available:`
+_ ** suspendium, moon disks, ubergrad, sofia, pontimus, titan, dachi, vabese, patosav, churchofpoi, site-113, valdern, kinny, lukas, greebel, city streets, spingrad, theocrasis, lakkin, molten, max, clear, primaris, royal empire, sccai, scacpsf, nsr, saekha, naterz, fellowhuman, throbwobbles, reason cthulhu, igra aluminum, reason gatling, diablo suspendium, igra pirate, igra turtles, igra buzzsaw, igra vulcan, reason lancre, reason soulengi, reason ring, reason buzzsaw, reason nessie, reason tickwork, puts ghosts, diablo kraken, nate dicey, tsl gundium, diablo kettlesen, igra doves, reason automatons, igra scawork, shittrends skateboarding, molten history, reason knurd, reason inventor, cat suspendium, reason pear, reason euclid, reason svejari, gustaf panties, reason cults, pikoul fortress, clear war, pikoul religion, pikoul time, pikoul quotes, reason boarding, "valdern** Evt: [object Object]
+1548152621042 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: i see Evt: [object Object]
+1548152625623 UID: 224794221217841153 CID: 517303057676238851 U: clearskiesnl Msg: :( Evt: [object Object]
+1548152674949 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $lore valdern Evt: [object Object]
+1548152675197 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: *"`Valdern` otherwise known as `Charles Valdern` is a mysterious figure that showed up and was voted to become the new President of the NSR, however, only known to two people alive, `Valdern` is the living embodiment of Clearsworth rage and anger, up to now his devious plans are unknown"* Evt: [object Object]
+1548152697015 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: i need to strip more quotes... Evt: [object Object]
+1548152709570 UID: 224794221217841153 CID: 517303057676238851 U: clearskiesnl Msg: Hm? Evt: [object Object]
+1548152751043 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: fixed it, dont worry Evt: [object Object]
+1548152757105 UID: 224794221217841153 CID: 517303057676238851 U: clearskiesnl Msg: Oki Evt: [object Object]
+1548152763432 UID: 224794221217841153 CID: 517303057676238851 U: clearskiesnl Msg: $lore valdern Evt: [object Object]
+1548152763628 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: *"`Valdern` otherwise known as `Charles Valdern` is a mysterious figure that showed up and was voted to become the new President of the NSR, however, only known to two people alive, `Valdern` is the living embodiment of Clearsworth rage and anger, up to now his devious plans are unknown"* Evt: [object Object]
+1548152768466 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: .replace(/,|\"|\*|\`|:/gi, '') Evt: [object Object]
+1548152768732 UID: 224794221217841153 CID: 517303057676238851 U: clearskiesnl Msg: $lore clear Evt: [object Object]
+1548152768979 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: `Clear` formally known as `Patrick Clearsworth`, is, according to physcologists, a mentally unstable, rage filled, no longer human, being with a split personality and taste for blood, recognized by the `Foundation` as `SSCAI-031` because of his `Molten` abilities, this former diplomat and peacekeeper sparked a rebellion against `New Britannia` splitting the once great nation in three and becoming the president of the newly formed `New Saekhan Republic`, he has not been seen since retiring and is presumed dead" Evt: [object Object]
+1548153477218 UID: 224794221217841153 CID: 537026665512042496 U: clearskiesnl Msg: "thats all i want to know" Evt: [object Object]
