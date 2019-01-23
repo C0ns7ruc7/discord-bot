@@ -138,17 +138,19 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 				var cmd = args.join('').toUpperCase();
 				logger.info(cmd);
 				
-				var len, IV, psvar, result;
+				var len, IV, V, psvar, result;
 				
 				psvar = cmd.split('');
 				for(IV = 0, len = cmd.length; IV < len; ++IV){
 					
 					switch(cmd[IV]){
 						case !isNaN(cmd[IV]): 
-							psvar = cmd[IV];
+							
 						break;
 						case 'D': 
-							
+							for(V = 0; V < cmd[IV+1]; ++V){
+								
+							}
 						break;
 						case '+': 
 							
@@ -183,7 +185,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 		}
 	}); 
 
-	if (Math.floor(Math.random() * 30000) <= 300){
+	if (Math.floor(Math.random() * 30000) <= 100){
 		bot.sendMessage({
 			to: '481133060348182550',
 			message: "\`Random lore!:\` " + modules.randomLore(fs, logger)

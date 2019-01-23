@@ -53,7 +53,7 @@ module.exports = {
 				.replace(/!/gi, ' User:')
 			);
 		}else{
-			return('you forgot everything...');
+			return('\`you forgot everything...\`');
 		}
 	},
 	
@@ -67,10 +67,10 @@ module.exports = {
 			return('_<@' + userID + '> said:_ **' + result + '**');
 		}else{
 			return this.randomResponce([
-				'you what?',
-				'are you daft?',
-				'nope, not saying that and you can\'t make me',
-				'err... did you try not doing the \'thing\'?'
+				'\`you what?\`',
+				'\`are you daft?\`',
+				'\`nope, not saying that and you can\'t make me\`',
+				'\`err... did you try not doing the \'thing\'?\`'
 			]);
 		}
 	},
@@ -85,12 +85,12 @@ module.exports = {
 				result = result + ' ' + args[II];
 			}
 			return[
-				'your message has been sent',
+				'\`your message has been sent!\`',
 				'**\`[' + Math.floor((channelID - userID) / Date.now()) + ']\`**:' + result + '',
 				sendto + '',
 			];
 		}else{
-			return(['you broke the message']);
+			return(['\`you broke the message... somehow.\`']);
 		}	
 	},
 	
@@ -108,7 +108,7 @@ module.exports = {
 						var result = loreparsed["lore"][III][1];
 					}
 				}	
-				if(result){}else{result = "not found, try adding it with `$addlore` '" + args.join(' ') + " + 'soemthing you wrote'";}
+				if(result){}else{result = "\`not found, try adding it with `$addlore` '" + args.join(' ') + " + 'soemthing you wrote'\`";}
 			}catch(err){
 				result = "Something went horribly wrong...";
 				logger.info(err);
@@ -202,7 +202,7 @@ module.exports = {
 					args.join(' '),
 					userID
 				];
-				loreResult = "\`I added: " + objectKey.toLowerCase().replace(/_|-/g, ' '); + '.\`';
+				loreResult = "\`I added: " + objectKey.toLowerCase().replace(/_|-|,/g, ' '); + '.\`';
 			}
 			fs.writeFile('./data/lore.json', JSON.stringify(newdata), 'utf8', function (err) {
 				if (err){logger.info(err)};
