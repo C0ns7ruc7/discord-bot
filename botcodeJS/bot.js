@@ -178,7 +178,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             break;
         }
      }
-	
+	logger.info(evt);
 	fs.appendFile("./logs/log.txt", Date.now() + ' UID: ' + userID + ' CID: ' + channelID + ' U: ' + user + ' Msg: ' + message + ' Evt: ' + evt + '\n', function(err) {
 		if(err) {
 			return logger.info(err);
