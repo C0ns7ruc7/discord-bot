@@ -135,41 +135,42 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 			break;
 			
 			case 'ROLL':
-				var cmd = args.join('').toUpperCase();
-				logger.info(cmd);
-				
-				var len, IV, V, psvar, result;
-				
-				psvar = cmd.split('');
-				for(IV = 0, len = cmd.length; IV < len; ++IV){
-					
-					switch(cmd[IV]){
-						case !isNaN(cmd[IV]): 
-							
-						break;
-						case 'D': 
-							for(V = 0; V < cmd[IV+1]; ++V){
+				if(args[0]){
+					var cmd = args.join('').toUpperCase().split('');		
+//					logger.info("cmd: " + cmd);				
+					var len = IV = V = totalnum = dieXTime = dieSize = internum = 0;
+					var result = [];
+
+					for(IV = 0, len = cmd.length; IV < len; ++IV){
+						switch(cmd[IV]){
+							case 'D': 
+								dieXTime = (!isNaN(cmd[IV-1])) ? cmd[IV-1] : 1;
+								dieSize = cmd[IV+1]
 								
-							}
-						break;
-						case '+': 
-							
-						break;
-						case '-': 
-							
-						break;
-						default: 
-							
-						break;
+								for(V = 0; V < dieXTime; ++V){
+									internum = modules.randomNum(dieSize) + 1;
+									totalnum = totalnum + internum;
+									result.push(internum);
+								}
+							break;
+							case '+': 
+//								logger.info("+ found!");
+							break;
+							case '-': 
+//								logger.info("- found!");
+							break;
+							default: 
+//								logger.info("'other' found!");
+							break;
+						}
+//					logger.info("result: "+result);
+//					logger.info("totalnum: "+totalnum);
 					}
-					
-					logger.info("result: "+result);
-					logger.info("psvar: "+psvar);
+				speak( '<@' + userID+ '> has rolled **' + (totalnum * 1) + '** ( \`' + result + '\` )');
+				}else{
+					var num = [rNum(6) + 1, rNum(6) + 1];
+					speak( '<@' + userID+ '> has rolled **' + (num[0] + num[1]) + '** ( \`' + num[0] + '\`, \`' + num[1] + '\` )');
 				}
-				
-				var num = [rNum(6) + 1, rNum(6) + 1];
-				
-				speak( '<@' + userID+ '> has rolled **' + (num[0] + num[1]) + '** ( \`' + num[0] + '\`, \`' + num[1] + '\` )');
 			break;
             
             default:
