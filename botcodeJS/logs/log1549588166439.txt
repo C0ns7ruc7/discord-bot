@@ -1,0 +1,6 @@
+1549588126348 UID: 295652009745448971 CID: 480844958287396876 U: Vabese Msg: poke Evt: [object Object]
+1549588127025 UID: 294421064677851136 CID: 480844958287396876 U: Kylian, small time scrooge Msg: But there isnt really a easy way to switch a acvount i think Evt: [object Object]
+1549588129807 UID: 375967251804848128 CID: 510211775669731348 U: Tatourmi Msg: (Kill her!) Evt: [object Object]
+1549588151102 UID: 375967251804848128 CID: 480844958287396876 U: Tatourmi Msg: Hey Evt: [object Object]
+1549588162104 UID: 297459318796713996 CID: 480844958287396876 U: Fellow Human Msg: What about some bird dreams Evt: [object Object]
+1549588163904 UID: 294421064677851136 CID: 510211775669731348 U: Kylian, small time scrooge Msg: (She has a goddamn machinegun and im shit at aiming) Evt: [object Object]

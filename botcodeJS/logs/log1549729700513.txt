@@ -1,0 +1,8 @@
+1549729550662 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: i can stringify and get a data dump as safe text, but that.. modifying it a bit is going to do allot of work Evt: [object Object]
+1549729566833 UID: 224794221217841153 CID: 510211775669731348 U: clearskiesnl Msg: *they see a squid* Evt: [object Object]
+1549729575927 UID: 224794221217841153 CID: 510211775669731348 U: clearskiesnl Msg: *then darkness* Evt: [object Object]
+1549729585474 UID: 224794221217841153 CID: 510211775669731348 U: clearskiesnl Msg: *they reached lower then any sub* Evt: [object Object]
+1549729595666 UID: 294421064677851136 CID: 510211775669731348 U: Kylian, small time scrooge Msg: (how big was the squid?) Evt: [object Object]
+1549729602682 UID: 224794221217841153 CID: 510211775669731348 U: clearskiesnl Msg: ((normal)) Evt: [object Object]
+1549729606658 UID: 294421064677851136 CID: 510211775669731348 U: Kylian, small time scrooge Msg: (im fine with anything till one meter) Evt: [object Object]
+1549729646303 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: wait... i think i may have it now Evt: [object Object]

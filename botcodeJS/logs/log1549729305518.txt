@@ -1,0 +1,77 @@
+1549729083555 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: hmm Evt: [object Object]
+1549729092038 UID: 224794221217841153 CID: 510211775669731348 U: clearskiesnl Msg: *she frowns* Evt: [object Object]
+1549729109912 UID: 224794221217841153 CID: 510211775669731348 U: clearskiesnl Msg: "Just because i rather not talk about my home doesnt say anythingg" Evt: [object Object]
+1549729117287 UID: 224794221217841153 CID: 517303057676238851 U: clearskiesnl Msg: Was? Evt: [object Object]
+1549729135503 UID: 294421064677851136 CID: 510211775669731348 U: Kylian, small time scrooge Msg: "sure, well lets get on with the testing" Evt: [object Object]
+1549729163334 UID: 294421064677851136 CID: 517303057676238851 U: Kylian, small time scrooge Msg: was? Evt: [object Object]
+1549729182413 UID: 224794221217841153 CID: 510211775669731348 U: clearskiesnl Msg: *she frowns but nods* "All crew, prepare to dive" Evt: [object Object]
+1549729192426 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: some fuzzy stuff with a object Evt: [object Object]
+1549729211728 UID: 224794221217841153 CID: 517303057676238851 U: clearskiesnl Msg: Hm.. whats it saying? Evt: [object Object]
+1549729225463 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: i'm trying to pick `"guild_id":` from something, but anything other than `evt` gives `UNDEFINED` Evt: [object Object]
+1549729257104 UID: 294421064677851136 CID: 510211775669731348 U: Kylian, small time scrooge Msg: "here we go!" Evt: [object Object]
+1549729259945 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: ```json
+{
+   "message":{
+      "t":"MESSAGE_CREATE",
+      "s":22,
+      "op":0,
+      "d":{
+         "type":0,
+         "tts":false,
+         "timestamp":"2019-02-08T01:03:29.534000+00:00",
+         "pinned":false,
+         "nonce":"543235389167501312",
+         "mentions":[
+
+         ],
+         "mention_roles":[
+
+         ],
+         "mention_everyone":false,
+         "member":{
+            "roles":[
+               "480848165096914967",
+               "480848684284641290",
+               "481191082307223552",
+               "481501290418012171",
+               "481530548670693376",
+               "488082693049942047",
+               "494288907349786646",
+               "498844157679370240",
+               "499350789433589790",
+               "502123339905499139",
+               "502130992199499778",
+               "505362444730761236",
+               "505779943922466816",
+               "525257405446225920",
+               "538626260365213706",
+               "538636395208507393"
+            ],
+            "nick":"A feeling of impending Dbuggery",
+            "mute":false,
+            "joined_at":"2018-12-18T02:40:46.391107+00:00",
+            "deaf":false
+         },
+         "id":"543235388878094336",
+         "embeds":[
+
+         ],
+         "edited_timestamp":null,
+         "content":"*charge n",
+         "channel_id":"520574965024555008",
+         "author":{
+            "username":"Dbug113",
+            "id":"524405494744612879",
+            "discriminator":"0495",
+            "avatar":"972b003914bd62e77a5ffc850e01c5bc"
+         },
+         "attachments":[
+
+         ],
+         "guild_id":"480844957750657026"
+      }
+   },
+   "level":"info"
+}``` Evt: [object Object]
+1549729272846 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: just some random stuff Evt: [object Object]
+1549729292300 UID: 224794221217841153 CID: 517303057676238851 U: clearskiesnl Msg: Hm.. Evt: [object Object]

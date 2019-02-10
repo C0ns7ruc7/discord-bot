@@ -94,18 +94,19 @@ module.exports = {
 		}	
 	},
 	
-	getLore: function(args, userID, fs, logger){
+	getLore: function(args, userID, fs, logger, evt){
 		let loredata = fs.readFileSync('./data/lore.json');  
 		let loreparsed = JSON.parse(loredata); 
+		var serverloc = evt["d"]["guild_id"] // sets orgigen datastream for lore
 		if(args[0] && !(args[0].substring(0, 1) == '$')) {
 			var find = args.toString().toUpperCase();
 			try {
-				var listvar = Object.keys(loreparsed["lore"]);
+				var listvar = Object.keys(loreparsed[serverloc]);
 				
 				var III, len;
 				for (III = 0, len = listvar.length; III < len; ++III) {
-					if(loreparsed["lore"][III][0] === find){
-						var result = loreparsed["lore"][III][1];
+					if(loreparsed[serverloc][III][0] === find){
+						var result = loreparsed[serverloc][III][1];
 					}
 				}	
 				if(result){}else{result = "\`not found, try adding it with `$addlore` '" + args.join(' ') + " + 'soemthing you wrote'\`";}
@@ -119,13 +120,14 @@ module.exports = {
 				var args = args[0].split('$');
 				var cmd = (!isNaN(args[1])) ? args[1] : 0;
 			}
-			var listvar = Object.keys(loreparsed["lore"]);
+			if(!loreparsed[serverloc]){return("\`no lore has been found, please make some first, try $help!\`");}
+			var listvar = Object.keys(loreparsed[serverloc]);
 			var listresult = [];
 
 			var III, len;
 			for (III = 0, len = listvar.length; III < len; ++III) {
 				listresult.push(
-					' ' + loreparsed["lore"][III][0].toLowerCase().replace(',', ' ')
+					' ' + loreparsed[serverloc][III][0].toLowerCase().replace(',', ' ')
 				);
 			}		
 			
@@ -151,21 +153,23 @@ module.exports = {
 		}
 	},
 	
-	randomLore: function(fs, logger){
+	randomLore: function(fs, logger, evt){
 		let loredata = fs.readFileSync('./data/lore.json');  
 		let loreparsed = JSON.parse(loredata);
-		var result = "\`Something went horribly wrong...\`";		
+		var result = "\`Something went horribly wrong...\`";
+		var serverloc = evt["d"]["guild_id"] // sets orgigen datastream for lore
 		try {
-			var listvar = Object.keys(loreparsed["lore"]);
-			result = loreparsed["lore"][this.randomNum(listvar.length)][1]
+			var listvar = Object.keys(loreparsed[serverloc]);
+			result = loreparsed[serverloc][this.randomNum(listvar.length)][1]
 		}catch(err){
 			logger.info(err);
 		}
 		return(result);
 	},
 	
-	setLore: function(args, userID, fs, logger){
+	setLore: function(args, userID, fs, logger, evt){
 		if(args[0]){
+			var serverloc = evt["d"]["guild_id"] // sets orgigen datastream for lore
 			var objectKey = args[0]
 				.toUpperCase()
 				.replace(/,|\"|\*|\`|:/gi, '')
@@ -175,14 +179,14 @@ module.exports = {
 				if (err) { logger.info(err);}
 			});
 			var newdata = JSON.parse(data); 
-			var listvar = Object.keys(newdata["lore"]);
+			var listvar = (newdata[serverloc]) ? Object.keys(newdata[serverloc]) : [];
 			var done = false;
-			
 			var III, len, loreResult;
+
 			for (III = 0, len = listvar.length; III < len; ++III) {
-				if(newdata["lore"][III][0] === objectKey){
-					if(newdata["lore"][III][2] === userID){
-						newdata["lore"][III] = [
+				if(newdata[serverloc][III][0] === objectKey){
+					if(newdata[serverloc][III][2] === userID){
+						newdata[serverloc][III] = [
 							objectKey,
 							args.join(' '),
 							userID
@@ -197,11 +201,19 @@ module.exports = {
 				}
 			}	
 			if(!done){
-				newdata["lore"][(Object.keys(newdata["lore"])).length] = [
-					objectKey,
-					args.join(' '),
-					userID
-				];
+				if(newdata[serverloc]){
+					newdata[serverloc][(Object.keys(newdata[serverloc])).length] = [
+						objectKey,
+						args.join(' '),
+						userID
+					];
+				}else{
+					newdata[serverloc] = [[
+						objectKey,
+						args.join(' '),
+						userID
+					]];
+				}
 				loreResult = "\`I added: " + objectKey.toLowerCase().replace(/_|-|,/g, ' '); + '.\`';
 			}
 			fs.writeFile('./data/lore.json', JSON.stringify(newdata), 'utf8', function (err) {

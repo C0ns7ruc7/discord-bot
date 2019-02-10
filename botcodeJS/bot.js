@@ -62,9 +62,9 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 			
             case 'SAY'		: speak(modules.returnText(args, userID)); break;
 			case 'WHATIS'	: speak(modules.whatIs(args, userID)); break;
-			case 'LORE'		: speak(modules.getLore(args, userID, fs, logger)); break;
-			case 'RLORE'	: speak("\`Random lore!:\` " + modules.randomLore(fs, logger)); break;
-			case 'ADDLORE'	: speak(modules.setLore(args, userID, fs, logger)); break;
+			case 'LORE'		: speak(modules.getLore(args, userID, fs, logger, evt)); break;
+			case 'RLORE'	: speak("\`Random lore!:\` " + modules.randomLore(fs, logger, evt)); break;
+			case 'ADDLORE'	: speak(modules.setLore(args, userID, fs, logger, evt)); break;
 			
 			case 'RANDNUM'	:speak('gave number: \`' + args[0] + '\` result is: \`' + rNum(args[0]) + '\`'); break;
 			
@@ -178,17 +178,28 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             break;
         }
      }
-	logger.info(evt);
-	fs.appendFile("./logs/log.txt", Date.now() + ' UID: ' + userID + ' CID: ' + channelID + ' U: ' + user + ' Msg: ' + message + ' Evt: ' + evt + '\n', function(err) {
+	fs.appendFile("./logs/log.txt", Date.now() + ' UID: ' + userID + ' CID: ' + channelID + ' U: ' + user + ' Msg: ' + message + ' Evt: ' + JSON.stringify(evt) + '\n', function(err) {
 		if(err) {
 			return logger.info(err);
 		}
 	}); 
-
-	if (Math.floor(Math.random() * 30000) <= 100){
+	
+	//this piece of code makes the bot greet someone new to a serveer
+	if(evt["d"]["type"] === 7){
+		speak(modules.randomResponce([
+			"`"+user+"! welcome to hell, grab yourself a riffle and start gunning!`",
+			"`Hello "+user+"`",
+			"`HI HUMAN, WOULD YOU LIKE TO PARTAKE IN RP?`",
+			"`I see you... I'm always watching "+user+"... always watching...`",
+			"`well then, hi there "+user+"`",
+			"`beep, boop`"
+		]));
+	}
+	// "random" information creation
+	if (Math.floor(Math.random() * 30000) <= 20){
 		bot.sendMessage({
 			to: '481133060348182550',
-			message: "\`Random lore!:\` " + modules.randomLore(fs, logger)
+			message: "\`Random lore!:\` " + modules.randomLore(fs, logger, evt)
 		});
 	}
 });

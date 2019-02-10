@@ -1,0 +1,4 @@
+1549587782645 UID: 315235620400136204 CID: 531444434525749248 U: huehuehue Msg: *it blinked with all sorts of lights and ticked with gears interlacing the brass sheen, the parts that were upgraded was mostly limited to the cockpit though it did spread to other parts of the ship* Evt: [object Object]
+1549587786784 UID: 295652009745448971 CID: 480844958287396876 U: Vabese Msg: its a big old WIP Evt: [object Object]
+1549587804643 UID: 524405494744612879 CID: 520574965024555008 U: Dbug113 Msg: "THERE CAN BE ONLY ONE!" Evt: [object Object]
+1549587808307 UID: 524405494744612879 CID: 520574965024555008 U: Dbug113 Msg: *charge n Evt: [object Object]
