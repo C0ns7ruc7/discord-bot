@@ -1,4 +1,3 @@
 botcodeJS/node_modules/*
-botcodeJS/data/log.txt
-botcodeJS/data/old_log.txt
+botcodeJS/data/settings.json
 botcodeJS/logs/*

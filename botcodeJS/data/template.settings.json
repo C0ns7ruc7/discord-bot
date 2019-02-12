@@ -1,0 +1,10 @@
+{
+	"token": "DISCORD-BOT-TOKEN",
+	"adminChanel": "A-CHANLE-NUMBER",
+	"logLogs": true,
+	"silent": false,
+	"doRand": true,
+	"servers":{
+		"guild_id":"A-SERVER-NUMBER"
+	}
+}

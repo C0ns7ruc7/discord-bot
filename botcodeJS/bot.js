@@ -32,7 +32,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
     
     // shorten message function
     function speak(msg, chID){
-		if(settings.silent){
+		if(!settings.silent){
 			if (chID){
 				bot.sendMessage({
 					to: chID,
@@ -183,6 +183,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             break;
         }
      }
+	if(settings.logLogs)
 	fs.appendFile("./logs/log.txt", Date.now() + ' UID: ' + userID + ' CID: ' + channelID + ' U: ' + user + ' Msg: ' + message + ' Evt: ' + JSON.stringify(evt) + '\n', function(err) {
 		if(err) {
 			return logger.info(err);
@@ -200,12 +201,10 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 			"`beep, boop`"
 		]));
 	}
-	// "random" information creation
-	if (Math.floor(Math.random() * 30000) <= 20 && settings.logLogs){
-		bot.sendMessage({
-			to: '481133060348182550',
-			message: "\`Random lore!:\` " + modules.randomLore(fs, logger, evt)
-		});
+	
+	// "random" information lore pop-up
+	if (Math.floor(Math.random() * 30000) <= 20 && settings.doRand){
+		speak("------\n\`Random lore!:\` " + modules.randomLore(fs, logger, evt) + "\n------");
 	}
 });
 
