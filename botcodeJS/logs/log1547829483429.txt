@@ -1,4 +1,0 @@
-1547829454880 UID: 224794221217841153 CID: 480844958287396876 U: clearskiesnl Msg: that sucks Evt: [object Object]
-1547829457759 UID: 313205329716576256 CID: 480844958287396876 U: Dictatorputski Msg: so i reassigned it to home Evt: [object Object]
-1547829461305 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $addlore junk-data this is completely useless lore, or is it? Evt: [object Object]
-1547829461549 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: empty... Evt: [object Object]

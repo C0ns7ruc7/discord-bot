@@ -1,8 +1,0 @@
-1546801595831 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $lore 1 Evt: [object Object]
-1546801596121 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: _**Molten**: while not entirely accurate to call them that, the metal born monsters of a ancient biotech are aptly described as such with fire always being on their heels, it is recommended to just get out of the way._ Evt: [object Object]
-1546801604186 UID: 506892489282813992 CID: 518413302036955136 U: Thicc Cage Msg: "I have an agreement to make With Putski" he stotters Evt: [object Object]
-1546801610119 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: _ha.. well... it's something_ Evt: [object Object]
-1546801614022 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $lore 17 Evt: [object Object]
-1546801614249 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: Lukas II of Ubergrad, the Great Tsar (king) of Ubergrad. He is commonly called "the great" by the people becouse of his work to make Ubergrad a world reknown country. Before it was just seen as an irrelevant city-state. He is strict, but liked in his country. Evt: [object Object]
-1546801639270 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $lore 16 Evt: [object Object]
-1546801639562 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: Lakkin, Chancellor of Grundia, elected by parliament majority Evt: [object Object]

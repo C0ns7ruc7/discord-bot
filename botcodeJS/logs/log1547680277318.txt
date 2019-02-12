@@ -1,8 +1,0 @@
-1547680154374 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $lore something Evt: [object Object]
-1547680154568 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: not found Evt: [object Object]
-1547680171687 UID: 224794221217841153 CID: 520574965024555008 U: clearskiesnl Msg: *oh that doctor bright and his not so bright ideas!* Evt: [object Object]
-1547680189344 UID: 224794221217841153 CID: 517303057676238851 U: clearskiesnl Msg: $lore Evt: [object Object]
-1547680189550 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: _<@224794221217841153>, I have the following topic(s) available:
-_ ** suspendium, molten, moon disks, ubergrad, sofia, clear, pontimus, titan, dachi, vabese, patosav, churchofpoi, site-113, valdern, max, kinny, lakkin, lukas, greebel** Evt: [object Object]
-1547680214709 UID: 371341315310616576 CID: 507269614548287498 U: primaris Msg: *Far far up in low orbit, the prime hq 'orion' floats covered by a thick cloud over and so high up is basically a spec. The prime marines are moving around and dispositing the new load of suspendium they had earned. The any guns swiviled round and kept on look out from above and below. Transport ships where leaving and arriving, all was calm* Evt: [object Object]
-1547680235062 UID: 524405494744612879 CID: 520574965024555008 U: Dbug113 Msg: *A few minutes later, he's somehow escaped and is now riding a suspendium bicycle through the halls* Evt: [object Object]

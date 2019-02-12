@@ -1,8 +1,0 @@
-1547827994742 UID: 371341315310616576 CID: 480844958287396876 U: primaris Msg: is there a argument? Evt: [object Object]
-1547827999873 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $addlore junk-data this is completely useless lore, or is it? Evt: [object Object]
-1547828090374 UID: 314559616954662913 CID: 480844958287396876 U: Naterz Msg: Heyo Evt: [object Object]
-1547828144714 UID: 314559616954662913 CID: 480844958287396876 U: Naterz Msg: Oh boy, wouldn't it be a sudden turn of events if the Saekhan fascists voted to support Azuria Evt: [object Object]
-1547828168266 UID: 224794221217841153 CID: 480844958287396876 U: clearskiesnl Msg: ha no Evt: [object Object]
-1547828171336 UID: 224794221217841153 CID: 480844958287396876 U: clearskiesnl Msg: that aint happening Evt: [object Object]
-1547828172297 UID: 224794221217841153 CID: 480844958287396876 U: clearskiesnl Msg: never Evt: [object Object]
-1547828184607 UID: 314559616954662913 CID: 480844958287396876 U: Naterz Msg: But it's a diplomatic country Evt: [object Object]

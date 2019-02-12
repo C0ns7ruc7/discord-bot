@@ -1,5 +1,0 @@
-1545942394173 UID: 287954310653018113 CID: 490369229347094528 U: kinny09 Msg: *Some time later the man has made his way into town* Evt: [object Object]
-1545942399326 UID: 295652009745448971 CID: 491992251342520349 U: Vabese Msg: ((salvage the ship)) Evt: [object Object]
-1545942445903 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $lore Evt: [object Object]
-1545942446307 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: _<@295652009745448971>, I have the following topic(s) available:
-_ **null** Evt: [object Object]

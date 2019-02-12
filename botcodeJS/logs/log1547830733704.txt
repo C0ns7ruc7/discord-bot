@@ -1,4 +1,0 @@
-1547830670405 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $addlore junk-data this is completely useless lore, or is it? Evt: [object Object]
-1547830670613 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: stuff... FUCK Evt: [object Object]
-1547830710511 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $addlore Evt: [object Object]
-1547830710725 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: `you eh... need to add some text, just start writing things after the "$addlore", you can add embellishments all you like too, by the way.` Evt: [object Object]

@@ -1,3 +1,0 @@
-1549728901462 UID: 224794221217841153 CID: 510211775669731348 U: clearskiesnl Msg: ((your choice xD) Evt: [object Object]
-1549728995805 UID: 294421064677851136 CID: 510211775669731348 U: Kylian, small time scrooge Msg: "oh by the way heather, i recently heard there are two azurias which one are you from?" Evt: [object Object]
-1549729046129 UID: 224794221217841153 CID: 510211775669731348 U: clearskiesnl Msg: "...i.. rather not tell.." Evt: [object Object]

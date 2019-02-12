@@ -1,6 +1,0 @@
-1547556302251 UID: 314559616954662913 CID: 491992251342520349 U: Naterz Msg: *The lights seem less effective than usual, but the shadow leaves anyway.* Evt: [object Object]
-1547556338823 UID: 295652009745448971 CID: 532642869392179222 U: Vabese Msg: _a few of the black boxes are hit hard with random stones_ Evt: [object Object]
-1547556366330 UID: 295652009745448971 CID: 531921310511792128 U: Vabese Msg: ------------------------------------------
-_you find your bedroom shreded_ Evt: [object Object]
-1547556383930 UID: 524405494744612879 CID: 533290717003644958 U: Dbug113 Msg: `Umbra` has gained `diplomatic insult` cb against `foundation` Evt: [object Object]
-1547556439549 UID: 524405494744612879 CID: 510806073058394123 U: Dbug113 Msg: *What a helpful joker* Evt: [object Object]

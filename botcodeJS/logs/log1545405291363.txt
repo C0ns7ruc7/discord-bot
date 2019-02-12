@@ -1,2 +1,0 @@
-1545404948021 UID: 314559616954662913 CID: 524217670061522954 U: NaterzSnowtaterz Msg: ( <@524405494744612879> that's your cue) Evt: [object Object]
-1545405027499 UID: 524405494744612879 CID: 524217670061522954 U: Dbug113 Msg: "To the ADC, thanks for taking this guy off our hands. He never stops ranting about cranberries and its taking years off our lifespans listening to it all day! also this note has a tracker on it and so does 006 so if you guys attack us or if we trade again, we know where you all" Evt: [object Object]

@@ -1,3 +1,0 @@
-1547830304829 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $add Evt: [object Object]
-1547830305054 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: Try running `$help` Evt: [object Object]
-1547830312126 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $addlore junk-data this is completely useless lore, or is it? Evt: [object Object]

@@ -1,8 +1,0 @@
-1547554468343 UID: 314559616954662913 CID: 480844958287396876 U: Naterz Msg: Yay this means I can hurt clear without hurting valdern Evt: [object Object]
-1547554469777 UID: 314559616954662913 CID: 480844958287396876 U: Naterz Msg: Yayyyy Evt: [object Object]
-1547554545543 UID: 524405494744612879 CID: 510806073058394123 U: Dbug113 Msg: *Another probe zooms out of the atmosphere, it stops after about 100 kilometers out then falls back* Evt: [object Object]
-1547554570029 UID: 295652009745448971 CID: 480844958287396876 U: Vabese Msg: well... i'm not sure you would want to 'hurt' clear Evt: [object Object]
-1547554580140 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $roll Evt: [object Object]
-1547554580311 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: <@295652009745448971> has rolled **7** ( `5`, `2` ) Evt: [object Object]
-1547554593665 UID: 295652009745448971 CID: 517303057676238851 U: Vabese Msg: $roll 2d6 Evt: [object Object]
-1547554593844 UID: 517269535024349195 CID: 517303057676238851 U: Molten Greebel Msg: <@295652009745448971> has rolled **6** ( `3`, `3` ) Evt: [object Object]

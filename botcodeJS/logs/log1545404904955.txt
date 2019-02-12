@@ -1,6 +1,0 @@
-1545404896916 UID: 314559616954662913 CID: 524217670061522954 U: NaterzSnowtaterz Msg: Man: "This is 006?"
-Guard: "Yes, it is."
-Man: "Good. Take him to block 3, prep for the process."
-Guard: "Yes sir."
-*The guards pick up 006 and carry him to the hangar exit.*
-*The man leans over and picks up the note.* Evt: [object Object]
