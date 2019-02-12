@@ -32,16 +32,20 @@ bot.on('message', function (user, userID, channelID, message, evt) {
     
     // shorten message function
     function speak(msg, chID){
-		if (chID){
-			bot.sendMessage({
-				to: chID,
-				message: msg + ''
-			});
+		if(settings.silent){
+			if (chID){
+				bot.sendMessage({
+					to: chID,
+					message: msg + ''
+				});
+			}else{
+				bot.sendMessage({
+					to: channelID,
+					message: msg + ''
+				});
+			}
 		}else{
-			bot.sendMessage({
-				to: channelID,
-				message: msg + ''
-			});
+			logger.info(msg);
 		}
     }
     
@@ -197,7 +201,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 		]));
 	}
 	// "random" information creation
-	if (Math.floor(Math.random() * 30000) <= 20){
+	if (Math.floor(Math.random() * 30000) <= 20 && settings.logLogs){
 		bot.sendMessage({
 			to: '481133060348182550',
 			message: "\`Random lore!:\` " + modules.randomLore(fs, logger, evt)

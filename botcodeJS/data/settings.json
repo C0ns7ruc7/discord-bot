@@ -1,6 +1,8 @@
 {
 	"token": "NTE3MjY5NTM1MDI0MzQ5MTk1.DuCUhg.c-YgUD-uwF6OCb-Au7VCTyvkdcs",
 	"adminChanel": "483465099093344276",
+	"logLogs": false,
+	"silent": true,
 	"servers":{
 		"guild_id":"480844957750657026"
 	}
