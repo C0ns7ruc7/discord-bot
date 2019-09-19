@@ -70,7 +70,8 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 			case 'RLORE'	: speak("\`Random lore!:\` " + modules.randomLore(fs, logger, evt)); break;
 			case 'ADDLORE'	: speak(modules.setLore(args, userID, fs, logger, evt)); break;
 			
-			case 'RANDNUM'	:speak('gave number: \`' + args[0] + '\` result is: \`' + rNum(args[0]) + '\`'); break;
+			case 'RANDNUM'	: speak('gave number: \`' + args[0] + '\` result is: \`' + rNum(args[0]) + '\`'); break;
+			case 'MUTATE'	: speak("\`Random Mutations!:\` " + modules.randommute(fs, logger, evt, args)); break;
 			
 			case 'MAIL': 
 				var intermediary = modules.sendText(args, channelID, userID); // TODO: make this nicer

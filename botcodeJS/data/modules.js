@@ -97,7 +97,7 @@ module.exports = {
 	getLore: function(args, userID, fs, logger, evt){
 		let loredata = fs.readFileSync('./data/lore.json');  
 		let loreparsed = JSON.parse(loredata); 
-		var serverloc = evt["d"]["guild_id"] // sets orgigen datastream for lore
+		var serverloc = evt["d"]["guild_id"]; // sets orgigen datastream for lore
 		if(args[0] && !(args[0].substring(0, 1) == '$')) {
 			var find = args.toString().toUpperCase();
 			try {
@@ -157,19 +157,49 @@ module.exports = {
 		let loredata = fs.readFileSync('./data/lore.json');  
 		let loreparsed = JSON.parse(loredata);
 		var result = "\`Something went horribly wrong...\`";
-		var serverloc = evt["d"]["guild_id"] // sets orgigen datastream for lore
+		var serverloc = evt["d"]["guild_id"]; // sets orgigen datastream for lore
 		try {
 			var listvar = Object.keys(loreparsed[serverloc]);
 			result = loreparsed[serverloc][this.randomNum(listvar.length)][1]
 		}catch(err){
 			logger.info(err);
 		}
-		return(result);
+		return(result.toString());
+	},
+	
+	randommute: function(fs, logger, evt, args){
+		if(args[1]){
+			return ('..._ \n\`Er... hold on a bit, you gave too many things, try again\`_')
+		}else{
+			if(Number.isInteger(args[0] * 1)){
+				if(args[0] <= 60){
+					let mutedata = fs.readFileSync('./data/mutations.json');  
+					let muteparsed = JSON.parse(mutedata);
+					var result = "\`Something went horribly wrong...\`";
+					
+					var listvar = Object.keys(muteparsed["mutations"]);
+					result = [];
+					for(i = 0; i < args[0]; i++){
+						loop = muteparsed["mutations"][this.randomNum(listvar.length)];
+						result.push(loop);
+					}
+					return('_ \n>>> ' + (result.join(' \n')) + '_');
+				}else{
+					return('..._ \n\`Buddy, pall, I know you\'re eager, but keep it to 60 at a time.\`_');
+				}
+			}else{
+				if(typeof(args[0]) === 'string'){
+					return('..._ \n\`... what? you didn\'t give me a number, this lookup thing is not based on a 36 numbered system, don\'t be daft.\`_')
+				}else{
+					return('..._ \n\`You know I would, but you forgot to give a numer...\`_');
+				}
+			}
+		}
 	},
 	
 	setLore: function(args, userID, fs, logger, evt){
 		if(args[0]){
-			var serverloc = evt["d"]["guild_id"] // sets orgigen datastream for lore
+			var serverloc = evt["d"]["guild_id"]; // sets orgigen datastream for lore
 			var objectKey = args[0]
 				.toUpperCase()
 				.replace(/,|\"|\*|\`|:/gi, '')
