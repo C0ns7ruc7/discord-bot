@@ -4,7 +4,7 @@ module.exports = {
 			'Ok first up i\'m still being made so, be gentle... \n\n' + 
 			'- I have \`Ping\`, \`pong\`, \`bing\`, \`bong\`, \`ree\`, \`scream\`, \`beep\` and \`boop\` they are what they are, use em an I will come back at you >=\) \n' + 
 			'- then I have the \`say\` {msg} comand, it makes me repeat you... I don\'t know why that is here. \n' + 
-			'- I also keep track of \`lore\` [lore name] things, do a empty command for a list. When I have too much lore you can do \'`\$lore`\ \`$#\`\' for going between pages. \n' +
+			'- I also keep track of \`lore\` [lore name] things, do a empty command for a list. When I have too much lore you can do \'`\lore`\ \`$#\`\' for going between pages. \n' +
 			'- you can add things with \`addlore\` the first word is used as search method, the owner of a word can overwrite with the same command \n' + 
 			'- if you just want any lore, use \`rlore\` for random stuff.\n' +
 			'- remove lore with \`rmvlore\` to get rid of it completely(not implimented). \n' + 
@@ -12,6 +12,7 @@ module.exports = {
 			'- a functional command is the \`whatis\` [@user/role OR #channel], it shows you the number needed for DM\'ing using the mail function \n' + 
 			'- I also have the \`roll\` command, it works as a automatic 2d6 if you don\'t add comments \n' + 
 			'- then there is the \`die\` command that can shut me down.\n' +
+			'- If you feel lucky, There\'s also a random \`Mutate\` function, it has prety much all of the mutations you can think of\n' + 
 			'\n' + 
 			'there are a bunch of other things in the works \n' + 
 			'don\'t forget I use \`$\`\'s to react';
@@ -191,7 +192,7 @@ module.exports = {
 				if(typeof(args[0]) === 'string'){
 					return('..._ \n\`... what? you didn\'t give me a number, this lookup thing is not based on a 36 numbered system, don\'t be daft.\`_')
 				}else{
-					return('..._ \n\`You know I would, but you forgot to give a numer...\`_');
+					return('..._ \n\`You know I would, but you forgot to give a number...\`_');
 				}
 			}
 		}
