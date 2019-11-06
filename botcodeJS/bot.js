@@ -2,7 +2,11 @@
 var Discord = require('discord.io');
 var logger = require('winston');
 var settings = require('./data/settings.json');
-var modules = require('./data/modules.js');
+
+var modules = require('./bot_modules/modules.js');
+var modulesHelp = require('./bot_modules/modules-help.js');
+var modulesCards = require('./bot_modules/modules-cards.js');
+
 function rNum(num){return modules.randomNum(num);}
 const fs = require('fs');
 
@@ -56,7 +60,9 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 		var responce 	= ((rNum(10)) >= 5) ? '?' : '!';
 		
         switch(cmd) {
-			case 'HELP': speak(modules.helpText(userID)); break;
+			case 'HELP': speak(modulesHelp.helpText(args, userID)); break;
+			case 'CARDS': speak(modulesCards.cards(args, userID, fs, logger, evt)); break;
+			
             case 'PING': speak('**\`Pong' + responce + '\`**'); break;
 			case 'PONG': speak('**\`Ping' + responce + '\`**'); break;
 			case 'BING': speak('**\`Bong' + responce + '\`**'); break;
