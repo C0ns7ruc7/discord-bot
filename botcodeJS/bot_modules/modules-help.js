@@ -17,12 +17,14 @@ module.exports = {
 				case 'RMVLORE': result = "**`Remove lore with` `'rmvlore'` _`[lore name]`_ `to get rid of it completely, only admin/mod or the word owner can use this.`**"; break;
 				case 'MAIL': result = "**`the` `'mail'` `command, you use it as` `[#channel(or when in DM a number)]` _`{msg}`_ `where you can send messages to a chat across categories and servers`**"; break;
 				case 'WHATIS': result = "**`When you need to know something,` `'whatis '` `[@user/role OR #channel OR LongNumber],` `it shows you the number needed for DM'ing using the` `'mail'` `function`**"; break;
-				case 'ROLL': result = "**`The stereotypic` `'roll'` `{#D#}` `command, it works as a automatic 2d6 if you don't add comments`**"; break;
+				case 'ROLL': result = "**`The (improved) stereotypic` `'roll'` `{#D#}` `command, it uses the standard dice notation to work:` http://rpg.greenimp.co.uk/dice-roller/ .**"; break;
+				case 'OLDROLL': result = "**`The stereotypic and depricated` `'roll'` `{#D#}` `command, it works as a automatic 2d6 if you don't add comments. It is homebrew`**"; break;
 				case 'DIE': result = "**`... I can't do that, Dave`**"; break;
 				case 'MUTATE': result = "**`For when you need a random physical trait that adds something crazy to your DNA, for use in RP/Writing lovecraftian works of fiction,` `'Mutate'` `{#}.` `Fair warining, there's some sensitive content in there that can be seen as NSFW or NSFL depending on how you view the internet as all things that can be changed are on the table, it can get wierd and may require periodic flamethrower.`**"; break;
 				case 'HELP': result = "**`You're using it right now, but` `'Help'` `{word}` `for what you want more explantion on`**"; break;
+				case 'CARDS': result = "**`Currently a WIP`**"; break;
 //				case '': result = "**``**"; break;
-				default: result = "**`'" + args + "' is what '" + args + "' is. You know more than I do`**"; break;
+				default: result = "**`'" + args + "' is what '" + args + "' is. You know more than I do`**(contact <@295652009745448971> for help)"; break;
 			}
 			
 		}else{
@@ -37,7 +39,8 @@ module.exports = {
 				"- RmvLore - Mail\n" +
 				"- WhatIs  - Roll\n" +
 				"- Die     - Mutate\n" +
-				"- Help    - ```**";
+				"- Help    - OldRoll\n" +
+				"- Cards   - ```**";
 		}
 		return result;
 	}

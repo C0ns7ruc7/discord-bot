@@ -6,6 +6,8 @@ var settings = require('./data/settings.json');
 var modules = require('./bot_modules/modules.js');
 var modulesHelp = require('./bot_modules/modules-help.js');
 var modulesCards = require('./bot_modules/modules-cards.js');
+var modulesDice = require('./bot_modules/modules-dice.js');
+var modulesShittalk = require('./bot_modules/modules-shittalk.js');
 
 function rNum(num){return modules.randomNum(num);}
 const fs = require('fs');
@@ -27,7 +29,7 @@ var bot = new Discord.Client({
 bot.on('ready', function (evt) {
     logger.info	('Connected, logged in: ' + bot.username + ' -(' + bot.id + ')');
 	fs.rename	('./logs/log.txt', './logs/log' + Date.now() + '.txt', (err) => {if (err) throw err;});
-	fs.writeFile('./logs/log.txt', '', 'ascii', (err) => {if (err) throw err;});  
+	fs.writeFile('./logs/log.txt', '', 'ascii', (err) => {if (err) throw err;});
 });
 
 bot.on('message', function (user, userID, channelID, message, evt) {
@@ -60,21 +62,22 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 		var responce 	= ((rNum(10)) >= 5) ? '?' : '!';
 		
         switch(cmd) {
-			case 'HELP': speak(modulesHelp.helpText(args, userID)); break;
-			case 'CARDS': speak(modulesCards.cards(args, userID, fs, logger, evt)); break;
+			case 'HELP'		: speak(modulesHelp.helpText(args, userID)); break;
+			case 'CARDS'	: speak(modulesCards.cards(args, userID, fs, logger, evt)); break;
 			
-            case 'PING': speak('**\`Pong' + responce + '\`**'); break;
-			case 'PONG': speak('**\`Ping' + responce + '\`**'); break;
-			case 'BING': speak('**\`Bong' + responce + '\`**'); break;
-			case 'BONG': speak('**\`Bing' + responce + '\`**'); break;
-			case 'BEEP': speak('**\`Boop' + responce + '\`**'); break;
-			case 'BOOP': speak('**\`Beep' + responce + '\`**'); break;
+            case 'PING'		: speak('**\`Pong' + responce + '\`**'); break;
+			case 'PONG'		: speak('**\`Ping' + responce + '\`**'); break;
+			case 'BING'		: speak('**\`Bong' + responce + '\`**'); break;
+			case 'BONG'		: speak('**\`Bing' + responce + '\`**'); break;
+			case 'BEEP'		: speak('**\`Boop' + responce + '\`**'); break;
+			case 'BOOP'		: speak('**\`Beep' + responce + '\`**'); break;
 			
             case 'SAY'		: speak(modules.returnText(args, userID)); break;
 			case 'WHATIS'	: speak(modules.whatIs(args, userID)); break;
 			case 'LORE'		: speak(modules.getLore(args, userID, fs, logger, evt)); break;
 			case 'RLORE'	: speak("\`Random lore!:\` " + modules.randomLore(fs, logger, evt)); break;
 			case 'ADDLORE'	: speak(modules.setLore(args, userID, fs, logger, evt)); break;
+			case 'ROLL'		: speak("**<@" + userID + ">\`" + modulesDice.dice(args, userID, fs, logger, evt) + "\`**"); break;
 			
 			case 'RANDNUM'	: speak('gave number: \`' + args[0] + '\` result is: \`' + rNum(args[0]) + '\`'); break;
 			case 'MUTATE'	: speak("\`Random Mutations!:\` " + modules.randommute(fs, logger, evt, args)); break;
@@ -145,7 +148,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 				}
 			break;
 			
-			case 'ROLL':
+			case 'OLDROLL':
 				if(args[0]){
 					var cmd = args.join('').toUpperCase().split('');		
 //					logger.info("cmd: " + cmd);				
@@ -189,7 +192,10 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 				logger.info(cmd);
             break;
         }
-     }
+    }else if(message.toUpperCase().includes((bot.username).toUpperCase()) || message.toUpperCase().includes(((bot.username).toUpperCase().split(" "))[1])){
+		speak(modulesShittalk.reply(args, userID, message, fs, logger, evt));
+	}
+	
 	if(settings.logLogs)
 	fs.appendFile("./logs/log.txt", Date.now() + ' UID: ' + userID + ' CID: ' + channelID + ' U: ' + user + ' Msg: ' + message + ' Evt: ' + JSON.stringify(evt) + '\n', function(err) {
 		if(err) {
@@ -197,15 +203,15 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 		}
 	}); 
 	
-	//this piece of code makes the bot greet someone new to a serveer
+	//this piece of code makes the bot greet someone new to a server
 	if(evt["d"]["type"] === 7){
 		speak(modules.randomResponce([
 			"`"+user+"! welcome to hell, grab yourself a riffle and start gunning!`",
 			"`Hello "+user+"`",
-			"`HI HUMAN, WOULD YOU LIKE TO PARTAKE IN RP?`",
+			"`HI HUMAN, WOULD YOU LIKE TO PARTAKE IN THIS SERVER?`",
 			"`I see you... I'm always watching "+user+"... always watching...`",
 			"`well then, hi there "+user+"`",
-			"`beep, boop`"
+			"`beep, boop- ... I mean, GREETINGS`"
 		]));
 	}
 	

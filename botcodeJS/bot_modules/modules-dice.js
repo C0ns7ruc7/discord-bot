@@ -7,7 +7,7 @@ module.exports = {
 		const diceRoller = new DiceRoller();
 
 		// roll the dice
-		diceRoller.roll('4d20-L');
+		diceRoller.roll(args[0]);
 
 		// get the latest dice rolls from the log
 		let latestRoll = diceRoller.log.shift();
