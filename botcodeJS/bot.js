@@ -206,7 +206,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 	//this piece of code makes the bot greet someone new to a server
 	if(evt["d"]["type"] === 7){
 		speak(modules.randomResponce([
-			"`"+user+"! welcome to hell, grab yourself a riffle and start gunning!`",
+			"`"+user+"! Welcome to hell, grab yourself a rifle and start gunning!`",
 			"`Hello "+user+"`",
 			"`HI HUMAN, WOULD YOU LIKE TO PARTAKE IN THIS SERVER?`",
 			"`I see you... I'm always watching "+user+"... always watching...`",

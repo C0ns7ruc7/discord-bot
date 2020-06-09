@@ -22,7 +22,8 @@ module.exports = {
 				case 'DIE': result = "**`... I can't do that, Dave`**"; break;
 				case 'MUTATE': result = "**`For when you need a random physical trait that adds something crazy to your DNA, for use in RP/Writing lovecraftian works of fiction,` `'Mutate'` `{#}.` `Fair warining, there's some sensitive content in there that can be seen as NSFW or NSFL depending on how you view the internet as all things that can be changed are on the table, it can get wierd and may require periodic flamethrower.`**"; break;
 				case 'HELP': result = "**`You're using it right now, but` `'Help'` `{word}` `for what you want more explantion on`**"; break;
-				case 'CARDS': result = "**`Currently a WIP`**"; break;
+				case 'CARDS': result = "**`'Cards' {New|Draw|Look|Play|Discard} {Scope} {type or number order}:\n'New' makes a new deck with 'Cards New {Scope} {Type}'.\n\n'Draw' {scope} {number of cards} [HIDDEN](add if you wish to keep it a secret) draws a card and puts it in hand.\n\n'Look' {scope} {number in hand order}, if latter is left open will look at all instead.\n\n'play' {scope} {order number} plays the card.\n\n'Discard' {scope} {number order in hand}, discards card, currently manual for each.\n\nScope is for what group can use it(SERVER(global), CHAT(this chat) or PERSONAL(just you)).\n\nType is one of a few premade ones:\nSTANDARD(4 types, 2 jokers), DOUBLE(8 types, 4 jokers), ICON(standard, but with ascii icon), OFFICIAL(no jokers), JOKERS(5 types, 8 jokers) or default(4 types. 3 jokers)`**"; break;
+
 //				case '': result = "**``**"; break;
 				default: result = "**`'" + args + "' is what '" + args + "' is. You know more than I do`**(contact <@295652009745448971> for help)"; break;
 			}

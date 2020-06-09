@@ -137,6 +137,13 @@ module.exports = {
 				trinari = "";
 				
 				function carddrawfunc(x){
+					if((newdeck[serverloc][0].length-1, 0) <= x){ // true if no cards left
+						var reshuffle = newdeck[serverloc][2].splice(0, (newdeck[serverloc][2].length));
+						newdeck[serverloc][0] = newdeck[serverloc][0].concat(reshuffle);
+						logger.info(reshuffle);
+						logger.info(newdeck);
+					}
+					
 					for(y = 0; y < x; y++){
 						var primary = rand(newdeck[serverloc][0].length-1, 0);
 						var secondary = newdeck[serverloc][0].splice(primary, 1);
@@ -148,6 +155,7 @@ module.exports = {
 							trinari = trinari + "[" + secondary + "] ";
 						}
 					}
+					
 				}
 				if(argsUpper[2] && !isNaN(argsUpper[2])){
 					carddrawfunc(argsUpper[2]);
@@ -158,6 +166,7 @@ module.exports = {
 				tertairy = trinari;
 				
 				save(newdeck);
+				
 				return tertairy;
 			break;
 			
